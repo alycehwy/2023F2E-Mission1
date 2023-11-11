@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="FirstAidKit" clip-path="url(#clip0_502_405)">
+<path id="Vector" d="M108 36H20C17.7909 36 16 37.7909 16 40V104C16 106.209 17.7909 108 20 108H108C110.209 108 112 106.209 112 104V40C112 37.7909 110.209 36 108 36Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M84 36V28C84 25.8783 83.1571 23.8434 81.6569 22.3431C80.1566 20.8429 78.1217 20 76 20H52C49.8783 20 47.8434 20.8429 46.3431 22.3431C44.8429 23.8434 44 25.8783 44 28V36" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M64 60V84" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M76 72H52" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_502_405">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>

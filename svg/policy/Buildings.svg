@@ -1,0 +1,16 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Buildings" clip-path="url(#clip0_104_2163)">
+<path id="Vector" d="M68 108V16C67.9996 15.2761 67.8027 14.5659 67.4304 13.9451C67.058 13.3243 66.5242 12.8161 65.8857 12.4748C65.2473 12.1336 64.5282 11.9719 63.8052 12.0072C63.0821 12.0424 62.3822 12.2733 61.78 12.675L21.78 39.34C21.2314 39.7061 20.7817 40.2021 20.4712 40.784C20.1606 41.3659 19.9988 42.0155 20 42.675V108" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M68 44H104C105.061 44 106.078 44.4214 106.828 45.1716C107.579 45.9217 108 46.9391 108 48V108" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M8 108H120" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M52 56V64" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M36 56V64" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M36 84V92" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M52 84V92" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_104_2163">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>

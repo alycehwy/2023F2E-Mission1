@@ -1,0 +1,14 @@
+<svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="MoonStars" clip-path="url(#clip0_502_125)">
+<path id="Vector" d="M104 60.5V36.5" stroke="#C6C6C6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M116 48.5H92" stroke="#C6C6C6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M80 16.5V32.5" stroke="#C6C6C6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M88 24.5H72" stroke="#C6C6C6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M105.345 79.59C102.267 80.1956 99.1373 80.5003 96.0002 80.5C88.906 80.4941 81.9011 78.917 75.4889 75.8821C69.0766 72.8472 63.4161 68.4298 58.9139 62.9472C54.4118 57.4646 51.1798 51.053 49.4502 44.1728C47.7205 37.2927 47.5361 30.1149 48.9102 23.155C41.9672 25.694 35.7758 29.9414 30.9077 35.505C26.0397 41.0686 22.6519 47.7692 21.0573 54.9878C19.4627 62.2065 19.7126 69.7106 21.7839 76.8072C23.8553 83.9037 27.6814 90.364 32.9088 95.5914C38.1362 100.819 44.5965 104.645 51.6931 106.716C58.7896 108.788 66.2937 109.038 73.5124 107.443C80.7311 105.848 87.4316 102.461 92.9952 97.5925C98.5589 92.7245 102.806 86.5331 105.345 79.59Z" stroke="#C6C6C6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_502_125">
+<rect width="128" height="128" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>

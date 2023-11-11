@@ -1,0 +1,17 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Park" clip-path="url(#clip0_104_2117)">
+<path id="Vector" d="M12 100H116" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M28 68V100" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M56 68V100" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M20 84H64" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M20 68H64" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M96 100V80" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M96 16L112 80H80L96 16Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M58 44C63.5228 44 68 39.5228 68 34C68 28.4772 63.5228 24 58 24C52.4772 24 48 28.4772 48 34C48 39.5228 52.4772 44 58 44Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_104_2117">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>

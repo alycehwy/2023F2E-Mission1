@@ -1,0 +1,11 @@
+<svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Planet" clip-path="url(#clip0_502_516)">
+<path id="Vector" d="M64 108.5C88.3005 108.5 108 88.8005 108 64.5C108 40.1995 88.3005 20.5 64 20.5C39.6995 20.5 20 40.1995 20 64.5C20 88.8005 39.6995 108.5 64 108.5Z" stroke="#C6C6C6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M92.3801 30.8751C105.945 27.2701 116.085 27.6501 119.1 32.8451C124.6 42.3101 104.375 64.1501 73.9401 81.6351C43.5051 99.1201 14.3901 105.635 8.90014 96.1351C5.87514 90.9201 10.6551 81.9501 20.6451 72.0201" stroke="#C6C6C6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_502_516">
+<rect width="128" height="128" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>

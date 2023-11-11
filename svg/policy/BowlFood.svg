@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="BowlFood" clip-path="url(#clip0_104_2169)">
+<path id="Vector" d="M24 56C24 45.3913 28.2143 35.2172 35.7157 27.7157C43.2172 20.2143 53.3913 16 64 16C74.6087 16 84.7828 20.2143 92.2843 27.7157C99.7857 35.2172 104 45.3913 104 56" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M44.8 56C46.6443 46.9651 51.5535 38.8448 58.6968 33.0136C65.8401 27.1823 74.7788 23.9981 84 24C85.4381 24.0008 86.8751 24.0775 88.305 24.23" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M67.3301 56.0002C69.9356 50.0403 73.9531 44.8045 79.0353 40.7449C84.1176 36.6854 90.1118 33.9243 96.5001 32.7002" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M44 99.65C35.6429 95.8195 28.5615 89.6697 23.5979 81.9317C18.6342 74.1938 15.9971 65.1931 16 56H112C112.003 65.1931 109.366 74.1938 104.402 81.9317C99.4385 89.6697 92.3571 95.8195 84 99.65V104C84 105.061 83.5786 106.078 82.8284 106.828C82.0783 107.579 81.0609 108 80 108H48C46.9391 108 45.9217 107.579 45.1716 106.828C44.4214 106.078 44 105.061 44 104V99.65Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_104_2169">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>
