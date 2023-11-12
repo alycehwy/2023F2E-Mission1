@@ -1,0 +1,53 @@
+body {
+    font-family: $font-family;
+    color: $gray-color-5;
+    background-color: $gray-color-5;
+    font-size: $font-body;
+    line-height: $line-height-body;
+    
+    a {
+        color: $gray-color-5;
+    }
+}
+
+.body {
+    background-color: $gray-color-0;
+}
+
+header {
+    max-width: $destop-width;
+    margin: 0 auto;
+    padding: 0 $sp-6;
+}
+
+main {
+    max-width: $destop-width;
+    margin: 0 auto;
+    padding: 0 $sp-6;
+}
+
+footer {
+    max-width: $destop-width;
+    margin: 0 auto;
+    color: $gray-color-0;
+    padding: $sp-4 $sp-6;
+
+    a {
+        color: $gray-color-0;
+    }
+
+    h4 {
+        color: $primary-color-3;
+    }
+}   
+
+.title-bold {
+    font-weight: $font-weight-title;
+}
+
+
+
+
+
+
+
