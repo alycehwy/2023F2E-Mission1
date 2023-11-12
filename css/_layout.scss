@@ -4,10 +4,6 @@ body {
     background-color: $gray-color-5;
     font-size: $font-body;
     line-height: $line-height-body;
-    
-    a {
-        color: $gray-color-5;
-    }
 }
 
 .body {
@@ -45,7 +41,51 @@ footer {
     font-weight: $font-weight-title;
 }
 
+.button-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: $sp-2;
+    padding: $sp-2 $sp-3;
+    background-color: $primary-color-3;
+    border-radius: $sp-5;
+    border: none;
+    font-size: $font-body;
+    font-weight: $font-weight;
+    line-height: $line-height-body;
+}
 
+.button-sm:hover {
+    background-color: $primary-color-4;
+}
+
+.button-sm:active {
+    background-color: $primary-color-4;
+}
+
+.link-light {
+    color: $gray-color-5;
+}
+
+.link-dark {
+    color: $gray-color-0;
+}
+
+.link-light:hover, .link-dark:hover {
+    color: $primary-color-5;
+}
+
+.link-light:active, .link-dark:hover {
+    color: $primary-color-5;
+}
+
+.link-social:hover {
+    background-color: $primary-color-5;
+}
+
+.link-social:active {
+    background-color: $primary-color-5;
+}
 
 
 

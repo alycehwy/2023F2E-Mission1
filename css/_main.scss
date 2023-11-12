@@ -1,70 +1,48 @@
 // header
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexbox(row,space-between);
     padding: $sp-3 0;
     
     img {
+        display: flex;
         height: $sp-5;
     }
 
-    > div {
+    div {
         display: flex;
         column-gap: $sp-3;
 
-        > a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: $sp-2;
-            background-color: $primary-color-3;
-            padding: $sp-2 $sp-3;
-            border-radius: $sp-5;
-
-            &:hover {
-                background-color: $primary-color-4;
-            }
-
-            &:active {
-                background-color: $primary-color-4;
-            }
+        button {
+            @extend .button-sm;
         }
     }
 }
 
 .header-links {
-    display: flex;
-    align-items: center;
+    @include flexbox(row);
     column-gap: $sp-4;
-    
-    a:hover {
-        color: $primary-color-5;
-    }
 
-    a:active {
-        color: $primary-color-5;
+    a {
+        @extend .link-light;
     }
 }
 
 .social {
-    display: flex;
-    align-items: flex-start;
+    @include flexbox(row,center,flex-start);
     column-gap: $sp-3;
 
-    i:hover {
-        background-color: $primary-color-5;
-    }
-
-    i:active {
-        color: $primary-color-5;
+    i {
+        display: flex;
+        @extend .link-social;
     }
 }
 
+.cover {
+    position: relative;
+}
+
 .cover-bg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(row);
     background-color: $gray-color-2;
     border-radius: $sp-3;
     height: 640px;
@@ -77,53 +55,61 @@
     }
 }
 
-.cover > p {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: $sp-2 $sp-4;
+.cover-black {
+    height: 407px;
+    position: absolute;
+    top: 249px;
+    left: 807px;
+}
+
+.cover-banner {
+    @include flexbox(row,center,center,inline-flex);
     column-gap: $sp-2;
+    padding: $sp-2 $sp-4;
     background-color: $gray-color-5;
-    border-radius: $sp-5;
     color: $primary-color-3;
+    border-radius: $sp-5;
     font-size: $font-title-l;
+    position: absolute;
+    top: 276px;
+    left: -20px;
 
     span {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(row,center,center,inline-flex);
         width: $sp-6;
         height: $sp-6;
-        border: 3px solid $primary-color-3;
-        border-radius: $sp-5;
-    }
-
-    .svg {
-        background-color: $primary-color-3;
+    
+        &.num {
+            border: 3px solid $primary-color-3;
+            border-radius: $sp-5;
+        }
+    
+        .svg {
+            background-color: $primary-color-3;
+        }
     }
 }
 
-.black-01 {
-    height: 407px;
+.cover-button {
+    @extend .button-sm;
+    position: absolute;
+    top: 580px;
+    left: 839px;
 }
 
 // footer
 .footer {
     height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flexbox(column,space-between,unset);
 
     > div {
-        display: flex;
-        justify-content: space-between;
+        @include flexbox(row,space-between,flex-start);
 
         > div {
             display: flex;
             column-gap: $sp-4;
         }
     }
-
 }
 
 .footer-logo{
@@ -132,23 +118,18 @@
 
 .footer-links {
     width: 64px;
-    display: flex;
-    flex-direction: column;
+    @include flexbox(column,unset,unset);
     row-gap: $sp-3;
 
-    a:hover {
-        color: $primary-color-5;
-    }
-
-    a:active {
-        color: $primary-color-5;
+    a {
+        @extend .link-dark;
     }
 }
 
 .contact {
     width: 267px;
     display: flex;
-    flex-direction: column;
+    @include flexbox(column,unset,unset);
     row-gap: $sp-3;
 
     address {
@@ -156,17 +137,12 @@
     }
 
     li {
-        display: flex;
-        align-items: center;
+        @include flexbox(row,unset);
         column-gap: $sp-1;
     }
 
-    a:hover {
-        color: $primary-color-5;
-    }
-
-    a:active {
-        color: $primary-color-5;
+    a {
+        @extend .link-dark;
     }
 
     .svg {
