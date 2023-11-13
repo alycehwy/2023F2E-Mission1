@@ -178,6 +178,64 @@
     }
 }
 
+// policy section
+.policy {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-4;
+}
+
+.policy-tab {
+    @include flexbox(row,unset,unset);
+
+    li {
+        width: 33.33%;
+        padding: $sp-3;
+        text-align: center;
+        background-color: $primary-color-4;
+        color: $gray-color-5;
+        border-radius: $sp-3 $sp-3 0 0;
+
+        &:hover {
+            background-color: $primary-color-3;
+        }
+
+        &:active, &.active {
+            background-color: $primary-color-1;
+        }
+    }
+}
+
+.policy-box {
+    @include flexbox(column,unset);
+    row-gap: $sp-5;
+    padding: $sp-4 0;
+    background-color: $primary-color-1;
+
+    > div {
+        @include flexbox(row,unset,unset);
+        height: 268px;
+    }
+}
+
+.policy-box-detail {
+    width: 33.33%;
+    background-image: url("/svg/policy/Background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 $sp-4;
+    padding: 0 $sp-3;
+    @include flexbox(column,unset);
+    row-gap: $sp-2;
+
+    h3 {
+        color: $gray-color-5;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
 // footer
 .footer {
     height: 280px;
