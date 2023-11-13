@@ -1,6 +1,6 @@
 // header
 .nav {
-    @include flexbox(row,space-between);
+    @include flexbox(row,space-between,center);
     padding: $sp-3 0;
     
     img {
@@ -9,8 +9,7 @@
     }
 
     div {
-        display: flex;
-        column-gap: $sp-3;
+        @include flexbox($dir: row, $cgap: $sp-3);  
 
         button {
             @extend .button-sm;
@@ -19,8 +18,7 @@
 }
 
 .header-links {
-    @include flexbox(row);
-    column-gap: 24px;
+    @include flexbox($dir: row, $ai: center, $cgap: 24px);
 
     a {
         @extend .link-light;
@@ -28,8 +26,7 @@
 }
 
 .social {
-    @include flexbox(row,center,flex-start);
-    column-gap: $sp-3;
+    @include flexbox(row,center,flex-start,0,$sp-3);
 
     i {
         display: flex;
@@ -42,13 +39,12 @@
 }
 
 .cover-bg {
-    @include flexbox(row);
+    @include flexbox(row,center,center);
     background-color: $gray-color-2;
     border-radius: $sp-3;
     height: 640px;
 
     p {
-        @include flexbox(column,unset,unset);
         color: $gray-color-0;
         font-size: 260px;
         line-height: 320px;
@@ -57,15 +53,14 @@
 }
 
 .cover-black {
-    height: 407px;
+    width: 361px;
     position: absolute;
     top: 249px;
     left: 807px;
 }
 
 .cover-banner {
-    @include flexbox(row,center,center,inline-flex);
-    column-gap: $sp-2;
+    @include flexbox(row,center,center,0,$sp-2,inline-flex);
     padding: $sp-2 $sp-4;
     background-color: $gray-color-5;
     color: $primary-color-3;
@@ -75,7 +70,7 @@
     left: -20px;
 
     span {
-        @include flexbox(row,center,center,inline-flex);
+        @include flexbox(row,center,center,0,0,inline-flex);
         width: $sp-6;
         height: $sp-6;
     
@@ -94,19 +89,17 @@
     @extend .button-sm;
     position: absolute;
     top: 580px;
-    left: 839px;
+    left: 832.5px;
 }
 
 // main
 // claims section
 .main {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-6;
+    @include flexbox($rgap: $sp-6);
 }
 
 .claims {
-    @include flexbox(row,unset,unset);
-    column-gap: $sp-4;
+    @include flexbox($dir: row, $cgap: $sp-4);
 
     div:first-child{
         width: 264px;
@@ -114,15 +107,17 @@
 
     div:last-child{
         width: 856px;
-        font-size: $font-subtitle;
+        
+        p {
+            color: $gray-color-5;
+        }
     }
 
 }
 
 // events
 .events {
-    @include flexbox(row,unset,unset);
-    column-gap: $sp-4;
+    @include flexbox($dir: row, $cgap: $sp-4);
 
     > div:first-child{
         width: 264px;
@@ -134,12 +129,10 @@
 }
 
 .event-list {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-4;
+    @include flexbox($rgap: $sp-4);
 
-    li{
-        @include flexbox(row,unset,unset);
-        column-gap: $sp-3;
+    li {
+        @include flexbox($dir: row, $cgap: $sp-3);
 
         div:first-child{
             width: 264px;
@@ -167,8 +160,7 @@
 }
 
 .event-detail{
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-2;
+    @include flexbox($rgap: $sp-2);
 
     > div {
         @include flexbox(row,space-between,center);
@@ -181,12 +173,11 @@
 
 // policy section
 .policy {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-4;
+    @include flexbox($rgap: $sp-4);
 }
 
 .policy-tab {
-    @include flexbox(row,unset,unset);
+    display: flex;
 
     li {
         width: 33.33%;
@@ -207,13 +198,12 @@
 }
 
 .policy-box {
-    @include flexbox(column,unset);
-    row-gap: $sp-5;
+    @include flexbox($ai: center, $rgap: $sp-5);
     padding: $sp-4 0;
     background-color: $primary-color-1;
 
     > div {
-        @include flexbox(row,unset,unset);
+        display: flex;
         height: 268px;
     }
 }
@@ -225,8 +215,7 @@
     background-repeat: no-repeat;
     margin: 0 $sp-4;
     padding: 0 $sp-3;
-    @include flexbox(column,unset);
-    row-gap: $sp-2;
+    @include flexbox($ai: center, $rgap: $sp-2);
 
     h3 {
         color: $gray-color-5;
@@ -239,8 +228,7 @@
 
 // donation
 .donation {
-    @include flexbox(row,unset,unset);
-    column-gap: $sp-4;
+    @include flexbox($dir: row, $cgap: $sp-4);
 
     h3 {
         color: $gray-color-5;
@@ -248,24 +236,21 @@
 
     > div:first-child{
         width: 461px;
-        @include flexbox(column,space-between,unset);
+        @include flexbox($jc: space-between);
     }
 
     > div:last-child{
         width: 659px;
-        @include flexbox(column,unset,unset);
-        row-gap: $sp-3;
+        @include flexbox($rgap: $sp-3);
     }
 }
 
 .donation-word {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-4;
+    @include flexbox($rgap: $sp-4);
 }
 
 .donation-total {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-1;
+    @include flexbox($rgap: $sp-1);
     padding: $sp-3 $sp-4;
     background-color: $gray-color-5;
     border-radius: $sp-3;
@@ -276,7 +261,7 @@
 }
 
 .donation-option {
-    @include flexbox(row,space-between,unset);
+    @include flexbox(row,space-between);
     border: 2px solid $primary-color-5;
     border-radius: $sp-3;
     padding: 0 $sp-4;
@@ -292,8 +277,7 @@
 }
 
 .donation-option-detail {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-3;
+    @include flexbox($rgap: $sp-3);
     padding: $sp-3 0;
 
     p:first-child {
@@ -320,9 +304,8 @@
     height: 646px;
 
     > div:first-child{
-        width: 466px;
-        @include flexbox(column,unset,unset);
-        row-gap: $sp-4;
+        width: 461px;
+        @include flexbox($rgap: $sp-4);
     }
 
     > div:last-child{
@@ -344,8 +327,7 @@
 }
 
 .service-word {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-3;
+    @include flexbox($rgap: $sp-3);
 
     h3 {
         color: $gray-color-5;
@@ -353,12 +335,10 @@
 }
 
 .service-form {
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-3;
+    @include flexbox($rgap: $sp-3);
 
     div {
-        @include flexbox(column,unset,unset);
-        row-gap: $sp-2;
+        @include flexbox($rgap: $sp-2);
 
         input, textarea {
             border: 2px solid $gray-color-1;
@@ -386,15 +366,14 @@
 
 // footer
 .footer {
-    height: 280px;
-    @include flexbox(column,space-between,unset);
+    height: 216px;
+    @include flexbox($jc: space-between);
 
     > div {
         @include flexbox(row,space-between,flex-start);
 
         > div {
-            display: flex;
-            column-gap: $sp-4;
+            @include flexbox($dir: row, $cgap: $sp-4);
         }
     }
 }
@@ -403,10 +382,13 @@
     height: $sp-6;
 }
 
-.footer-links {
+.footer-links, .contact {
     width: 64px;
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-3;
+    @include flexbox($rgap: $sp-3);
+
+    ul {
+        @include flexbox($rgap: $sp-1);
+    }
 
     a {
         @extend .link-dark;
@@ -415,21 +397,9 @@
 
 .contact {
     width: 267px;
-    display: flex;
-    @include flexbox(column,unset,unset);
-    row-gap: $sp-3;
-
-    address {
-        display: inline-block;
-    }
 
     li {
-        @include flexbox(row,unset);
-        column-gap: $sp-1;
-    }
-
-    a {
-        @extend .link-dark;
+        @include flexbox($dir: row, $ai: center, $cgap: $sp-1);
     }
 
     .svg {

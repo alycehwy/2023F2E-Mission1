@@ -1,3 +1,4 @@
+// body
 body {
     font-family: $font-family;
     color: $gray-color-5;
@@ -11,20 +12,17 @@ body {
 }
 
 header {
-    max-width: $destop-width;
-    margin: 0 auto;
+    @extend .screen-size;
     padding: 0 $sp-6;
 }
 
 main {
-    max-width: $destop-width;
-    margin: 0 auto;
+    @extend .screen-size;
     padding: $sp-6 $sp-6;
 }
 
 footer {
-    max-width: $destop-width;
-    margin: 0 auto;
+    @extend .screen-size;
     color: $gray-color-0;
     padding: $sp-4 $sp-6;
 
@@ -37,32 +35,28 @@ footer {
     }
 } 
 
+// screen size + center
+.screen-size {
+    max-width: $destop-width;
+    margin: 0 auto;
+}
+
 // titles style
 .title-l {
-    font-size: $font-title-l;
-    font-weight: $font-weight-title;
-    color: $primary-color-5;
-    line-height: $line-height;
+    @include titleStyle($font-title-l);
 }
 
 .title-m {
-    font-size: $font-title-m;
-    font-weight: $font-weight-title;
-    color: $primary-color-5;
-    line-height: $line-height;
+    @include titleStyle($font-title-m);
 }
 
 .title-sub {
-    font-size: $font-subtitle;
-    color: $primary-color-5;
-    line-height: $line-height;
+    @include titleStyle($font-subtitle,$font-weight);
 }
 
 // button-sm style
 .button-sm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(row);
     column-gap: $sp-2;
     padding: $sp-2 $sp-3;
     background-color: $primary-color-3;
@@ -81,7 +75,6 @@ footer {
 .link-light {
     color: $gray-color-5;
 }
-
 
 .link-light:hover, .link-light:active {
     color: $primary-color-5;
@@ -122,6 +115,31 @@ footer {
     display: none;
 }
 
+// svg
+.svg {
+    display: inline-block;
+    background-color: $gray-color-5;
+}
+
+.svg-xs {
+    @include svgSize(16px,16px);
+}
+
+.svg-s {
+    @include svgSize(24px,24px);
+}
+
+.svg-m {
+    @include svgSize(32px,32px);
+}
+
+.svg-l {
+    @include svgSize(54px,54px);
+}
+
+.svg-xl {
+    @include svgSize(128px,128px);
+}
 
 
 

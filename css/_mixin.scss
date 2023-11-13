@@ -1,6 +1,20 @@
-@mixin flexbox($dir: column, $jc: center, $ai: center, $flex: flex) {
+@mixin flexbox($dir: column, $jc: unset, $ai: unset, $rgap: unset, $cgap:unset, $flex: flex) {
     display: $flex;
     flex-direction: $dir;
     justify-content: $jc;
     align-items: $ai;
+    row-gap: $rgap;
+    column-gap: $cgap;
+}
+
+@mixin titleStyle($size,$weight: $font-weight-title,$color: $primary-color-5,$height: $line-height){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $height;
+}
+
+@mixin svgSize($width,$height){
+    width: $width;
+    height: $height;
 }

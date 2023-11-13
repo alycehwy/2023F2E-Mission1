@@ -65,119 +65,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  color: #000000;
-  background-color: #000000;
-  font-size: 16px;
-  line-height: 1.75;
-}
-
-.body {
-  background-color: #FFFFFF;
-}
-
-header {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 64px;
-}
-
-main {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 64px 64px;
-}
-
-footer {
-  max-width: 1280px;
-  margin: 0 auto;
-  color: #FFFFFF;
-  padding: 32px 64px;
-}
-footer a {
-  color: #FFFFFF;
-}
-footer h4 {
-  color: #D1FA31;
-}
-
-.title-l {
-  font-size: 48px;
-  font-weight: 700;
-  color: #A8C400;
-  line-height: 1.5;
-}
-
-.title-m {
-  font-size: 28px;
-  font-weight: 700;
-  color: #A8C400;
-  line-height: 1.5;
-}
-
-.title-sub {
-  font-size: 20px;
-  color: #A8C400;
-  line-height: 1.5;
-}
-
-.button-sm, .cover-button, .nav div button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
-  padding: 8px 16px;
-  background-color: #D1FA31;
-  border-radius: 48px;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.75;
-}
-
-.button-sm:hover, .cover-button:hover, .nav div button:hover, .button-sm:active, .cover-button:active, .nav div button:active {
-  background-color: #BBE217;
-}
-
-.link-light, .header-links a {
-  color: #000000;
-}
-
-.link-light:hover, .header-links a:hover, .link-light:active, .header-links a:active {
-  color: #A8C400;
-}
-
-.link-dark, .contact a, .footer-links a {
-  color: #FFFFFF;
-}
-
-.link-dark:hover, .contact a:hover, .footer-links a:hover, .link-dark:hover {
-  color: #EEFFA9;
-}
-
-.link-social:hover, .social i:hover, .link-social:active, .social i:active {
-  background-color: #A8C400;
-}
-
-.donation-card, .donation-option:hover, .donation-option:active {
-  background-color: #000000;
-}
-.donation-card p:first-child, .donation-option:hover p:first-child, .donation-option:active p:first-child {
-  color: #FBFFE1;
-}
-.donation-card p:first-child span, .donation-option:hover p:first-child span, .donation-option:active p:first-child span {
-  color: #D1FA31;
-}
-.donation-card .svg, .donation-option:hover .svg, .donation-option:active .svg {
-  background-color: #FFFFFF;
-}
-
-.policy-box.hide {
-  display: none;
-}
-
 .arrow-right {
   -webkit-mask-image: url("/svg/ArrowRight.svg");
   mask-image: url("/svg/ArrowRight.svg");
@@ -293,6 +180,123 @@ footer h4 {
   mask-image: url("/svg/info/Envelope.svg");
 }
 
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #000000;
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.body {
+  background-color: #FFFFFF;
+}
+
+header {
+  padding: 0 64px;
+}
+
+main {
+  padding: 64px 64px;
+}
+
+footer {
+  color: #FFFFFF;
+  padding: 32px 64px;
+}
+footer a {
+  color: #FFFFFF;
+}
+footer h4 {
+  color: #D1FA31;
+}
+
+.screen-size, header, main, footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.title-l {
+  font-size: 48px;
+  font-weight: 700;
+  color: #A8C400;
+  line-height: 1.5;
+}
+
+.title-m {
+  font-size: 28px;
+  font-weight: 700;
+  color: #A8C400;
+  line-height: 1.5;
+}
+
+.title-sub {
+  font-size: 20px;
+  font-weight: 500;
+  color: #A8C400;
+  line-height: 1.5;
+}
+
+.button-sm, .cover-button, .nav div button {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding: 8px 16px;
+  background-color: #D1FA31;
+  border-radius: 48px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.button-sm:hover, .cover-button:hover, .nav div button:hover, .button-sm:active, .cover-button:active, .nav div button:active {
+  background-color: #BBE217;
+}
+
+.link-light, .header-links a {
+  color: #000000;
+}
+
+.link-light:hover, .header-links a:hover, .link-light:active, .header-links a:active {
+  color: #A8C400;
+}
+
+.link-dark, .footer-links a, .contact a {
+  color: #FFFFFF;
+}
+
+.link-dark:hover, .footer-links a:hover, .contact a:hover, .link-dark:hover {
+  color: #EEFFA9;
+}
+
+.link-social:hover, .social i:hover, .link-social:active, .social i:active {
+  background-color: #A8C400;
+}
+
+.donation-card, .donation-option:hover, .donation-option:active {
+  background-color: #000000;
+}
+.donation-card p:first-child, .donation-option:hover p:first-child, .donation-option:active p:first-child {
+  color: #FBFFE1;
+}
+.donation-card p:first-child span, .donation-option:hover p:first-child span, .donation-option:active p:first-child span {
+  color: #D1FA31;
+}
+.donation-card .svg, .donation-option:hover .svg, .donation-option:active .svg {
+  background-color: #FFFFFF;
+}
+
+.policy-box.hide {
+  display: none;
+}
+
 .svg {
   display: inline-block;
   background-color: #000000;
@@ -328,6 +332,9 @@ footer h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
   padding: 16px 0;
 }
 .nav img {
@@ -336,14 +343,19 @@ footer h4 {
 }
 .nav div {
   display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: unset;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
 .header-links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: unset;
   align-items: center;
+  row-gap: unset;
   -moz-column-gap: 24px;
        column-gap: 24px;
 }
@@ -352,6 +364,7 @@ footer h4 {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  row-gap: 0;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
@@ -368,15 +381,14 @@ footer h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
   background-color: #8C8C8C;
   border-radius: 16px;
   height: 640px;
 }
 .cover-bg p {
-  display: flex;
-  flex-direction: column;
-  justify-content: unset;
-  align-items: unset;
   color: #FFFFFF;
   font-size: 260px;
   line-height: 320px;
@@ -384,7 +396,7 @@ footer h4 {
 }
 
 .cover-black {
-  height: 407px;
+  width: 361px;
   position: absolute;
   top: 249px;
   left: 807px;
@@ -395,6 +407,7 @@ footer h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  row-gap: 0;
   -moz-column-gap: 8px;
        column-gap: 8px;
   padding: 8px 32px;
@@ -410,6 +423,9 @@ footer h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  row-gap: 0;
+  -moz-column-gap: 0;
+       column-gap: 0;
   width: 64px;
   height: 64px;
 }
@@ -424,7 +440,7 @@ footer h4 {
 .cover-button {
   position: absolute;
   top: 580px;
-  left: 839px;
+  left: 832.5px;
 }
 
 .main {
@@ -433,6 +449,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 64px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 
 .claims {
@@ -440,6 +458,7 @@ footer h4 {
   flex-direction: row;
   justify-content: unset;
   align-items: unset;
+  row-gap: unset;
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
@@ -448,7 +467,9 @@ footer h4 {
 }
 .claims div:last-child {
   width: 856px;
-  font-size: 20px;
+}
+.claims div:last-child p {
+  color: #000000;
 }
 
 .events {
@@ -456,6 +477,7 @@ footer h4 {
   flex-direction: row;
   justify-content: unset;
   align-items: unset;
+  row-gap: unset;
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
@@ -472,12 +494,15 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 32px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .event-list li {
   display: flex;
   flex-direction: row;
   justify-content: unset;
   align-items: unset;
+  row-gap: unset;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
@@ -509,12 +534,17 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 8px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .event-detail > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .event-detail > div span {
   color: #A8C400;
@@ -526,13 +556,12 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 32px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 
 .policy-tab {
   display: flex;
-  flex-direction: row;
-  justify-content: unset;
-  align-items: unset;
 }
 .policy-tab li {
   width: 33.33%;
@@ -555,14 +584,13 @@ footer h4 {
   justify-content: unset;
   align-items: center;
   row-gap: 48px;
+  -moz-column-gap: unset;
+       column-gap: unset;
   padding: 32px 0;
   background-color: #FBFFE1;
 }
 .policy-box > div {
   display: flex;
-  flex-direction: row;
-  justify-content: unset;
-  align-items: unset;
   height: 268px;
 }
 
@@ -578,6 +606,8 @@ footer h4 {
   justify-content: unset;
   align-items: center;
   row-gap: 8px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .policy-box-detail h3 {
   color: #000000;
@@ -591,6 +621,7 @@ footer h4 {
   flex-direction: row;
   justify-content: unset;
   align-items: unset;
+  row-gap: unset;
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
@@ -603,6 +634,9 @@ footer h4 {
   flex-direction: column;
   justify-content: space-between;
   align-items: unset;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .donation > div:last-child {
   width: 659px;
@@ -611,6 +645,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 16px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 
 .donation-word {
@@ -619,6 +655,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 32px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 
 .donation-total {
@@ -627,6 +665,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 4px;
+  -moz-column-gap: unset;
+       column-gap: unset;
   padding: 16px 32px;
   background-color: #000000;
   border-radius: 16px;
@@ -640,6 +680,9 @@ footer h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: unset;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
   border: 2px solid #A8C400;
   border-radius: 16px;
   padding: 0 32px;
@@ -654,6 +697,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 16px;
+  -moz-column-gap: unset;
+       column-gap: unset;
   padding: 16px 0;
 }
 .donation-option-detail p:first-child {
@@ -678,12 +723,14 @@ footer h4 {
   height: 646px;
 }
 .service > div:first-child {
-  width: 466px;
+  width: 461px;
   display: flex;
   flex-direction: column;
   justify-content: unset;
   align-items: unset;
   row-gap: 32px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .service > div:last-child {
   width: 659px;
@@ -708,6 +755,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 16px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .service-word h3 {
   color: #000000;
@@ -719,6 +768,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 16px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .service-form div {
   display: flex;
@@ -726,6 +777,8 @@ footer h4 {
   justify-content: unset;
   align-items: unset;
   row-gap: 8px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .service-form div input, .service-form div textarea {
   border: 2px solid #E2E2E2;
@@ -748,20 +801,30 @@ footer h4 {
 }
 
 .footer {
-  height: 280px;
+  height: 216px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: unset;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .footer > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .footer > div > div {
   display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: unset;
   -moz-column-gap: 32px;
        column-gap: 32px;
 }
@@ -770,31 +833,34 @@ footer h4 {
   height: 64px;
 }
 
-.footer-links {
+.footer-links, .contact {
   width: 64px;
   display: flex;
   flex-direction: column;
   justify-content: unset;
   align-items: unset;
   row-gap: 16px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
-.contact {
-  width: 267px;
-  display: flex;
+.footer-links ul, .contact ul {
   display: flex;
   flex-direction: column;
   justify-content: unset;
   align-items: unset;
-  row-gap: 16px;
+  row-gap: 4px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
-.contact address {
-  display: inline-block;
+.contact {
+  width: 267px;
 }
 .contact li {
   display: flex;
   flex-direction: row;
   justify-content: unset;
   align-items: center;
+  row-gap: unset;
   -moz-column-gap: 4px;
        column-gap: 4px;
 }
