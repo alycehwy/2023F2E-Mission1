@@ -231,9 +231,86 @@
         color: $gray-color-5;
     }
 
-    p{
+    p {
         text-align: center;
     }
+}
+
+// donation
+.donation {
+    @include flexbox(row,unset,unset);
+    column-gap: $sp-4;
+
+    h3 {
+        color: $gray-color-5;
+    }
+
+    > div:first-child{
+        width: 461px;
+        @include flexbox(column,space-between,unset);
+    }
+
+    > div:last-child{
+        width: 659px;
+        @include flexbox(column,unset,unset);
+        row-gap: $sp-3;
+    }
+}
+
+.donation-word {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-4;
+}
+
+.donation-total {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-1;
+    padding: $sp-3 $sp-4;
+    background-color: $gray-color-5;
+    border-radius: $sp-3;
+
+    p {
+        color: $primary-color-3;
+    }
+}
+
+.donation-option {
+    @include flexbox(row,space-between,unset);
+    border: 2px solid $primary-color-5;
+    border-radius: $sp-3;
+    padding: 0 $sp-4;
+
+    .svg {
+        background-color: $gray-color-2;
+        margin: 6.5px 0;
+    }
+
+    &:hover, &:active {
+        @extend .donation-card;
+    }
+}
+
+.donation-option-detail {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-3;
+    padding: $sp-3 0;
+
+    p:first-child {
+        color: $gray-color-3;
+
+        span {
+            color: $gray-color-5;
+        }
+    }
+}
+
+.num-of-sponsor {
+    display: inline;
+    width: fit-content;
+    padding: $sp-2 $sp-3;
+    background-color: $primary-color-2;
+    border-radius: $sp-2;
+    text-align: center;
 }
 
 // footer

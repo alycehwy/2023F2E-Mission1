@@ -137,11 +137,7 @@ footer h4 {
   line-height: 1.75;
 }
 
-.button-sm:hover, .cover-button:hover, .nav div button:hover {
-  background-color: #BBE217;
-}
-
-.button-sm:active, .cover-button:active, .nav div button:active {
+.button-sm:hover, .cover-button:hover, .nav div button:hover, .button-sm:active, .cover-button:active, .nav div button:active {
   background-color: #BBE217;
 }
 
@@ -149,24 +145,33 @@ footer h4 {
   color: #000000;
 }
 
+.link-light:hover, .header-links a:hover, .link-light:active, .header-links a:active {
+  color: #A8C400;
+}
+
 .link-dark, .contact a, .footer-links a {
   color: #FFFFFF;
 }
 
-.link-light:hover, .header-links a:hover, .link-dark:hover, .contact a:hover, .footer-links a:hover {
-  color: #A8C400;
+.link-dark:hover, .contact a:hover, .footer-links a:hover, .link-dark:hover {
+  color: #EEFFA9;
 }
 
-.link-light:active, .header-links a:active, .link-dark:hover, .contact a:hover, .footer-links a:hover {
-  color: #A8C400;
-}
-
-.link-social:hover, .social i:hover {
+.link-social:hover, .social i:hover, .link-social:active, .social i:active {
   background-color: #A8C400;
 }
 
-.link-social:active, .social i:active {
-  background-color: #A8C400;
+.donation-card, .donation-option:hover, .donation-option:active {
+  background-color: #000000;
+}
+.donation-card p:first-child, .donation-option:hover p:first-child, .donation-option:active p:first-child {
+  color: #FBFFE1;
+}
+.donation-card p:first-child span, .donation-option:hover p:first-child span, .donation-option:active p:first-child span {
+  color: #D1FA31;
+}
+.donation-card .svg, .donation-option:hover .svg, .donation-option:active .svg {
+  background-color: #FFFFFF;
 }
 
 .policy-box.hide {
@@ -574,6 +579,93 @@ footer h4 {
   color: #000000;
 }
 .policy-box-detail p {
+  text-align: center;
+}
+
+.donation {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.donation h3 {
+  color: #000000;
+}
+.donation > div:first-child {
+  width: 461px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: unset;
+}
+.donation > div:last-child {
+  width: 659px;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 16px;
+}
+
+.donation-word {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 32px;
+}
+
+.donation-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 4px;
+  padding: 16px 32px;
+  background-color: #000000;
+  border-radius: 16px;
+}
+.donation-total p {
+  color: #D1FA31;
+}
+
+.donation-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: unset;
+  border: 2px solid #A8C400;
+  border-radius: 16px;
+  padding: 0 32px;
+}
+.donation-option .svg {
+  background-color: #8C8C8C;
+  margin: 6.5px 0;
+}
+.donation-option-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 16px;
+  padding: 16px 0;
+}
+.donation-option-detail p:first-child {
+  color: #8C8C8C;
+}
+.donation-option-detail p:first-child span {
+  color: #000000;
+}
+
+.num-of-sponsor {
+  display: inline;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #EEFFA9;
+  border-radius: 8px;
   text-align: center;
 }
 

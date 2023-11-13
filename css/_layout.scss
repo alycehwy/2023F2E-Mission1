@@ -73,38 +73,48 @@ footer {
     line-height: $line-height-body;
 }
 
-.button-sm:hover {
+.button-sm:hover, .button-sm:active {
     background-color: $primary-color-4;
 }
-
-.button-sm:active {
-    background-color: $primary-color-4;
-}
-
 
 // link-light/link-dark style
 .link-light {
     color: $gray-color-5;
 }
 
+
+.link-light:hover, .link-light:active {
+    color: $primary-color-5;
+}
+
 .link-dark {
     color: $gray-color-0;
 }
 
-.link-light:hover, .link-dark:hover {
-    color: $primary-color-5;
+.link-dark:hover, .link-dark:hover {
+    color: $primary-color-2;
 }
 
-.link-light:active, .link-dark:hover {
-    color: $primary-color-5;
-}
 
-.link-social:hover {
+.link-social:hover, .link-social:active {
     background-color: $primary-color-5;
 }
 
-.link-social:active {
-    background-color: $primary-color-5;
+// card
+.donation-card {
+    background-color: $gray-color-5;
+
+    p:first-child {
+        color: $primary-color-1;
+
+        span {
+            color: $primary-color-3;
+        }
+    }
+
+    .svg {
+        background-color: $gray-color-0;
+    }
 }
 
 // hidden
