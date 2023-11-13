@@ -344,8 +344,8 @@ footer h4 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 .social {
   display: flex;
@@ -373,6 +373,10 @@ footer h4 {
   height: 640px;
 }
 .cover-bg p {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
   color: #FFFFFF;
   font-size: 260px;
   line-height: 320px;
@@ -667,6 +671,80 @@ footer h4 {
   background-color: #EEFFA9;
   border-radius: 8px;
   text-align: center;
+}
+
+.service {
+  position: relative;
+  height: 646px;
+}
+.service > div:first-child {
+  width: 466px;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 32px;
+}
+.service > div:last-child {
+  width: 659px;
+  padding: 32px;
+  background-color: #FBFFE1;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.service-black {
+  height: 337px;
+  position: absolute;
+  left: 267px;
+  bottom: -2px;
+}
+
+.service-word {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 16px;
+}
+.service-word h3 {
+  color: #000000;
+}
+
+.service-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 16px;
+}
+.service-form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 8px;
+}
+.service-form div input, .service-form div textarea {
+  border: 2px solid #E2E2E2;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.service-form div textarea {
+  resize: none;
+  height: 116px;
+}
+.service-form input[type=submit] {
+  background-color: #D1FA31;
+  border: none;
+  border-radius: 16px;
+  padding: 16px 32px;
+  color: #000000;
+  margin-top: 32px;
 }
 
 .footer {

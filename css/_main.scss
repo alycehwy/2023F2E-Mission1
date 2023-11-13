@@ -20,7 +20,7 @@
 
 .header-links {
     @include flexbox(row);
-    column-gap: $sp-4;
+    column-gap: 24px;
 
     a {
         @extend .link-light;
@@ -48,6 +48,7 @@
     height: 640px;
 
     p {
+        @include flexbox(column,unset,unset);
         color: $gray-color-0;
         font-size: 260px;
         line-height: 320px;
@@ -311,6 +312,76 @@
     background-color: $primary-color-2;
     border-radius: $sp-2;
     text-align: center;
+}
+
+// service
+.service {
+    position: relative;
+    height: 646px;
+
+    > div:first-child{
+        width: 466px;
+        @include flexbox(column,unset,unset);
+        row-gap: $sp-4;
+    }
+
+    > div:last-child{
+        width: 659px;
+        padding: $sp-4;
+        background-color: $primary-color-1;
+        border-radius: $sp-3;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.service-black {
+    height: 337px;
+    position: absolute;
+    left: 267px;
+    bottom: -2px;
+}
+
+.service-word {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-3;
+
+    h3 {
+        color: $gray-color-5;
+    }
+}
+
+.service-form {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-3;
+
+    div {
+        @include flexbox(column,unset,unset);
+        row-gap: $sp-2;
+
+        input, textarea {
+            border: 2px solid $gray-color-1;
+            border-radius: $sp-2;
+            padding: $sp-3;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        textarea {
+            resize: none;
+            height: 116px;
+        }
+    }
+
+    input[type=submit]{
+        background-color: $primary-color-3;
+        border: none;
+        border-radius: $sp-3;
+        padding: $sp-3 $sp-4;
+        color: $gray-color-5;
+        margin-top: $sp-4;
+    }
 }
 
 // footer
