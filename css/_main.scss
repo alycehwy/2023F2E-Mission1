@@ -69,7 +69,6 @@
     background-color: $gray-color-5;
     color: $primary-color-3;
     border-radius: $sp-5;
-    font-size: $font-title-l;
     position: absolute;
     top: 276px;
     left: -20px;
@@ -95,6 +94,88 @@
     position: absolute;
     top: 580px;
     left: 839px;
+}
+
+// main
+// claims section
+.main {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-6;
+}
+
+.claims {
+    @include flexbox(row,unset,unset);
+    column-gap: $sp-4;
+
+    div:first-child{
+        width: 264px;
+    }
+
+    div:last-child{
+        width: 856px;
+        font-size: $font-subtitle;
+    }
+
+}
+
+// events
+.events {
+    @include flexbox(row,unset,unset);
+    column-gap: $sp-4;
+
+    > div:first-child{
+        width: 264px;
+    }
+
+    > div:last-child{
+        width: 856px;
+    }
+}
+
+.event-list {
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-4;
+
+    li{
+        @include flexbox(row,unset,unset);
+        column-gap: $sp-3;
+
+        div:first-child{
+            width: 264px;
+        }
+
+        div:last-child{
+            width: 576px;
+        }
+    }
+}
+
+.event-img {
+    width: 250.894px;
+    border: 2px solid $primary-color-2;
+    border-radius: $sp-3;
+    box-shadow: 13.11px 13.53px $primary-color-2;
+}
+
+.event-word {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.event-detail{
+    @include flexbox(column,unset,unset);
+    row-gap: $sp-2;
+
+    > div {
+        @include flexbox(row,space-between,center);
+
+        span {
+            color: $primary-color-5;
+        }
+    }
 }
 
 // footer

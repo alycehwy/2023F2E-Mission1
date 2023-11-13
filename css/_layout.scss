@@ -19,7 +19,7 @@ header {
 main {
     max-width: $destop-width;
     margin: 0 auto;
-    padding: 0 $sp-6;
+    padding: $sp-6 $sp-6;
 }
 
 footer {
@@ -35,12 +35,30 @@ footer {
     h4 {
         color: $primary-color-3;
     }
-}   
+} 
 
-.title-bold {
+// titles style
+.title-l {
+    font-size: $font-title-l;
     font-weight: $font-weight-title;
+    color: $primary-color-5;
+    line-height: $line-height;
 }
 
+.title-m {
+    font-size: $font-title-m;
+    font-weight: $font-weight-title;
+    color: $primary-color-5;
+    line-height: $line-height;
+}
+
+.title-sub {
+    font-size: $font-subtitle;
+    color: $primary-color-5;
+    line-height: $line-height;
+}
+
+// button-sm style
 .button-sm {
     display: flex;
     align-items: center;
@@ -63,6 +81,8 @@ footer {
     background-color: $primary-color-4;
 }
 
+
+// link-light/link-dark style
 .link-light {
     color: $gray-color-5;
 }
