@@ -49,6 +49,7 @@
         font-size: 260px;
         line-height: 320px;
         letter-spacing: 13px;
+        margin-right: -13px;
     }
 }
 
@@ -89,7 +90,7 @@
     @extend .button-sm;
     position: absolute;
     top: 580px;
-    left: 832.5px;
+    left: 839px;
 }
 
 // main
@@ -133,18 +134,20 @@
     li {
         @include flexbox($dir: row, $cgap: $sp-3);
 
-        div:first-child{
-            width: $grid-3;
+        > div:first-child{
+            width: $grid-3 * (100% / $grid-9);
+            display: flex;
         }
 
-        div:last-child{
-            width: $grid-6 + $gutter-width - $sp-3;
+        > div:last-child{
+            width: calc($grid-6 * (100% / $grid-9) + $gutter-width - $sp-3);
         }
     }
 }
 
 .event-img {
-    width: $grid-3 - 13.11px;
+    width: calc(100% - 13.11px);
+    height: calc(100% - 13.53px);
     border: 2px solid $primary-color-2;
     border-radius: $sp-3;
     box-shadow: 13.11px 13.53px $primary-color-2;
@@ -319,7 +322,7 @@
 }
 
 .service-black {
-    width: $grid-3 + $gutter-width;
+    width: calc($grid-3 + $gutter-width);
     position: absolute;
     left: 267px;
     bottom: -2px;
@@ -373,6 +376,7 @@
 
         > div {
             @include flexbox($dir: row, $cgap: $sp-4);
+            width: $grid-4;
         }
     }
 }
@@ -382,7 +386,7 @@
 }
 
 .footer-links, .contact {
-    width: $grid-1;
+    width: $grid-1 * (100% / $grid-4);
     @include flexbox($rgap: $sp-3);
 
     ul {
@@ -395,7 +399,7 @@
 }
 
 .contact {
-    width: $grid-3;
+    width: $grid-3 * (100% / $grid-4);
 
     li {
         @include flexbox($dir: row, $ai: center, $cgap: $sp-1);

@@ -393,10 +393,11 @@ footer h4 {
   font-size: 260px;
   line-height: 320px;
   letter-spacing: 13px;
+  margin-right: -13px;
 }
 
 .cover-black {
-  width: 362.6666666667px;
+  width: 31.4814814815%;
   position: absolute;
   top: 249px;
   left: 807px;
@@ -440,7 +441,7 @@ footer h4 {
 .cover-button {
   position: absolute;
   top: 580px;
-  left: 832.5px;
+  left: 839px;
 }
 
 .main {
@@ -463,10 +464,10 @@ footer h4 {
        column-gap: 32px;
 }
 .claims div:first-child {
-  width: 264px;
+  width: 22.9166666667%;
 }
 .claims div:last-child {
-  width: 856px;
+  width: 74.3055555556%;
 }
 .claims div:last-child p {
   color: #000000;
@@ -482,10 +483,10 @@ footer h4 {
        column-gap: 32px;
 }
 .events > div:first-child {
-  width: 264px;
+  width: 22.9166666667%;
 }
 .events > div:last-child {
-  width: 856px;
+  width: 74.3055555556%;
 }
 
 .event-list {
@@ -506,15 +507,17 @@ footer h4 {
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-.event-list li div:first-child {
-  width: 264px;
+.event-list li > div:first-child {
+  width: 30.8411214953%;
+  display: flex;
 }
-.event-list li div:last-child {
-  width: 576px;
+.event-list li > div:last-child {
+  width: calc(65.4205607477% + 32px - 16px);
 }
 
 .event-img {
-  width: 250.89px;
+  width: calc(100% - 13.11px);
+  height: calc(100% - 13.53px);
   border: 2px solid #EEFFA9;
   border-radius: 16px;
   box-shadow: 13.11px 13.53px #EEFFA9;
@@ -629,7 +632,7 @@ footer h4 {
   color: #000000;
 }
 .donation > div:first-child {
-  width: 461.3333333333px;
+  width: 40.0462962963%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -639,7 +642,7 @@ footer h4 {
        column-gap: unset;
 }
 .donation > div:last-child {
-  width: 658.6666666667px;
+  width: 57.1759259259%;
   display: flex;
   flex-direction: column;
   justify-content: unset;
@@ -723,7 +726,7 @@ footer h4 {
   height: 646px;
 }
 .service > div:first-child {
-  width: 461.3333333333px;
+  width: 40.0462962963%;
   display: flex;
   flex-direction: column;
   justify-content: unset;
@@ -733,7 +736,7 @@ footer h4 {
        column-gap: unset;
 }
 .service > div:last-child {
-  width: 658.6666666667px;
+  width: 57.1759259259%;
   padding: 32px;
   background-color: #FBFFE1;
   border-radius: 16px;
@@ -743,7 +746,7 @@ footer h4 {
 }
 
 .service-black {
-  width: 296px;
+  width: calc(22.9166666667% + 32px);
   position: absolute;
   left: 267px;
   bottom: -2px;
@@ -827,6 +830,7 @@ footer h4 {
   row-gap: unset;
   -moz-column-gap: 32px;
        column-gap: 32px;
+  width: 31.4814814815%;
 }
 
 .footer-logo {
@@ -834,7 +838,7 @@ footer h4 {
 }
 
 .footer-links, .contact {
-  width: 66.6666666667px;
+  width: 18.3823529412%;
   display: flex;
   flex-direction: column;
   justify-content: unset;
@@ -853,7 +857,7 @@ footer h4 {
        column-gap: unset;
 }
 .contact {
-  width: 264px;
+  width: 72.7941176471%;
 }
 .contact li {
   display: flex;
