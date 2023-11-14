@@ -1,40 +1,3 @@
-// body
-body {
-    font-family: $font-family;
-    color: $gray-color-5;
-    background-color: $gray-color-5;
-    font-size: $font-body;
-    line-height: $line-height-body;
-}
-
-.body {
-    background-color: $gray-color-0;
-}
-
-header {
-    @extend .screen-size;
-    padding: 0 $sp-6;
-}
-
-main {
-    @extend .screen-size;
-    padding: $sp-6 $sp-6;
-}
-
-footer {
-    @extend .screen-size;
-    color: $gray-color-0;
-    padding: $sp-4 $sp-6;
-
-    a {
-        color: $gray-color-0;
-    }
-
-    h4 {
-        color: $primary-color-3;
-    }
-} 
-
 // screen size + center
 .screen-size {
     max-width: $destop-width;
@@ -122,24 +85,60 @@ footer {
 }
 
 .svg-xs {
-    @include svgSize(16px,16px);
+    @include svgSize(16px);
 }
 
 .svg-s {
-    @include svgSize(24px,24px);
+    @include svgSize(24px);
 }
 
 .svg-m {
-    @include svgSize(32px,32px);
+    @include svgSize(32px);
 }
 
 .svg-l {
-    @include svgSize(54px,54px);
+    @include svgSize(54px);
 }
 
 .svg-xl {
-    @include svgSize(128px,128px);
+    @include svgSize(128px);
 }
 
+// body
+body {
+    font-family: $font-family;
+    color: $gray-color-5;
+    background-color: $gray-color-5;
+    font-size: $font-body;
+    line-height: $line-height-body;
+}
+
+.body {
+    background-color: $gray-color-0;
+}
+
+header {
+    @extend .screen-size;
+    padding: 0 $sp-6;
+}
+
+main {
+    @extend .screen-size;
+    padding: $sp-6 $sp-6;
+}
+
+footer {
+    @extend .screen-size;
+    color: $gray-color-0;
+    padding: $sp-4 $sp-6;
+
+    a {
+        color: $gray-color-0;
+    }
+
+    h4 {
+        color: $primary-color-3;
+    }
+} 
 
 

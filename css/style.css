@@ -180,38 +180,7 @@ a {
   mask-image: url("/svg/info/Envelope.svg");
 }
 
-body {
-  font-family: "Noto Sans TC", sans-serif;
-  color: #000000;
-  background-color: #000000;
-  font-size: 16px;
-  line-height: 1.75;
-}
-
-.body {
-  background-color: #FFFFFF;
-}
-
-header {
-  padding: 0 64px;
-}
-
-main {
-  padding: 64px 64px;
-}
-
-footer {
-  color: #FFFFFF;
-  padding: 32px 64px;
-}
-footer a {
-  color: #FFFFFF;
-}
-footer h4 {
-  color: #D1FA31;
-}
-
-.screen-size, header, main, footer {
+.screen-size, footer, main, header {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -327,6 +296,37 @@ footer h4 {
   height: 128px;
 }
 
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #000000;
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.body {
+  background-color: #FFFFFF;
+}
+
+header {
+  padding: 0 64px;
+}
+
+main {
+  padding: 64px 64px;
+}
+
+footer {
+  color: #FFFFFF;
+  padding: 32px 64px;
+}
+footer a {
+  color: #FFFFFF;
+}
+footer h4 {
+  color: #D1FA31;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -396,7 +396,7 @@ footer h4 {
 }
 
 .cover-black {
-  width: 361px;
+  width: 362.6666666667px;
   position: absolute;
   top: 249px;
   left: 807px;
@@ -514,7 +514,7 @@ footer h4 {
 }
 
 .event-img {
-  width: 250.894px;
+  width: 250.89px;
   border: 2px solid #EEFFA9;
   border-radius: 16px;
   box-shadow: 13.11px 13.53px #EEFFA9;
@@ -629,7 +629,7 @@ footer h4 {
   color: #000000;
 }
 .donation > div:first-child {
-  width: 461px;
+  width: 461.3333333333px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -639,7 +639,7 @@ footer h4 {
        column-gap: unset;
 }
 .donation > div:last-child {
-  width: 659px;
+  width: 658.6666666667px;
   display: flex;
   flex-direction: column;
   justify-content: unset;
@@ -723,7 +723,7 @@ footer h4 {
   height: 646px;
 }
 .service > div:first-child {
-  width: 461px;
+  width: 461.3333333333px;
   display: flex;
   flex-direction: column;
   justify-content: unset;
@@ -733,7 +733,7 @@ footer h4 {
        column-gap: unset;
 }
 .service > div:last-child {
-  width: 659px;
+  width: 658.6666666667px;
   padding: 32px;
   background-color: #FBFFE1;
   border-radius: 16px;
@@ -743,7 +743,7 @@ footer h4 {
 }
 
 .service-black {
-  height: 337px;
+  width: 296px;
   position: absolute;
   left: 267px;
   bottom: -2px;
@@ -834,7 +834,7 @@ footer h4 {
 }
 
 .footer-links, .contact {
-  width: 64px;
+  width: 66.6666666667px;
   display: flex;
   flex-direction: column;
   justify-content: unset;
@@ -853,7 +853,7 @@ footer h4 {
        column-gap: unset;
 }
 .contact {
-  width: 267px;
+  width: 264px;
 }
 .contact li {
   display: flex;

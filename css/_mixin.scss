@@ -14,7 +14,7 @@
     line-height: $height;
 }
 
-@mixin svgSize($width,$height){
-    width: $width;
-    height: $height;
+@mixin svgSize($size){
+    width: $size;
+    height: $size;
 }

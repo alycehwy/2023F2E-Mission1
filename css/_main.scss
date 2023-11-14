@@ -53,7 +53,7 @@
 }
 
 .cover-black {
-    width: 361px;
+    width: $grid-4;
     position: absolute;
     top: 249px;
     left: 807px;
@@ -102,17 +102,16 @@
     @include flexbox($dir: row, $cgap: $sp-4);
 
     div:first-child{
-        width: 264px;
+        width: $grid-3;
     }
 
     div:last-child{
-        width: 856px;
+        width: $grid-9;
         
         p {
             color: $gray-color-5;
         }
     }
-
 }
 
 // events
@@ -120,11 +119,11 @@
     @include flexbox($dir: row, $cgap: $sp-4);
 
     > div:first-child{
-        width: 264px;
+        width: $grid-3;
     }
 
     > div:last-child{
-        width: 856px;
+        width: $grid-9;
     }
 }
 
@@ -135,17 +134,17 @@
         @include flexbox($dir: row, $cgap: $sp-3);
 
         div:first-child{
-            width: 264px;
+            width: $grid-3;
         }
 
         div:last-child{
-            width: 576px;
+            width: $grid-6 + $gutter-width - $sp-3;
         }
     }
 }
 
 .event-img {
-    width: 250.894px;
+    width: $grid-3 - 13.11px;
     border: 2px solid $primary-color-2;
     border-radius: $sp-3;
     box-shadow: 13.11px 13.53px $primary-color-2;
@@ -235,12 +234,12 @@
     }
 
     > div:first-child{
-        width: 461px;
+        width: $grid-5;
         @include flexbox($jc: space-between);
     }
 
     > div:last-child{
-        width: 659px;
+        width: $grid-7;
         @include flexbox($rgap: $sp-3);
     }
 }
@@ -304,12 +303,12 @@
     height: 646px;
 
     > div:first-child{
-        width: 461px;
+        width: $grid-5;
         @include flexbox($rgap: $sp-4);
     }
 
     > div:last-child{
-        width: 659px;
+        width: $grid-7;
         padding: $sp-4;
         background-color: $primary-color-1;
         border-radius: $sp-3;
@@ -320,7 +319,7 @@
 }
 
 .service-black {
-    height: 337px;
+    width: $grid-3 + $gutter-width;
     position: absolute;
     left: 267px;
     bottom: -2px;
@@ -383,7 +382,7 @@
 }
 
 .footer-links, .contact {
-    width: 64px;
+    width: $grid-1;
     @include flexbox($rgap: $sp-3);
 
     ul {
@@ -396,7 +395,7 @@
 }
 
 .contact {
-    width: 267px;
+    width: $grid-3;
 
     li {
         @include flexbox($dir: row, $ai: center, $cgap: $sp-1);
@@ -411,3 +410,8 @@
     text-align: center;
     font-size: 14px;
 }
+
+// RWD
+// @media (max-width:992px) {
+    
+// }
