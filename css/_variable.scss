@@ -35,6 +35,7 @@ $line-height-body: 1.75;
 
 // layout
 $destop-width: 1280px;
+$mobile-width: 375px;
 $col-num: 12;
 $col-width-total: $destop-width - ($sp-6 * 2);
 $col-width: calc(($col-width-total - (($col-num - 1) * $sp-4)) / $col-num);

@@ -1,0 +1,77 @@
+@media (max-width: 767px){
+    header, main, footer {
+        max-width: $mobile-width;
+        margin: 0 auto;
+        padding: unset;
+    }
+
+    // header
+    .nav {
+        padding: $sp-3;
+
+        > div, > ul {
+            display: none;
+        } 
+    }
+
+    .cover-bg {
+        height: auto;
+
+        p {
+            font-size: 80px;
+            line-height: $line-height;
+            letter-spacing: 4px;
+            margin-right: -4px;
+        }
+    }
+
+    .cover-black {
+        width: 305px;
+    }
+
+
+    // footer
+    .footer {
+        height: auto;
+        padding: $sp-4 $sp-3;
+        row-gap: $sp-4;
+
+        > div {
+            flex-direction: column;
+            row-gap: $sp-3;
+
+            > div {
+                flex-direction: column;
+                width: 100%;
+                row-gap: $sp-4;
+            }
+        }
+    }
+
+    .footer-social .svg {
+        background-color: $gray-color-0;
+            
+        &:hover, &:active{
+            background-color: $primary-color-5;
+        }
+    }
+
+    .footer-links {
+        width: 100%;
+        row-gap: $sp-2;
+
+        > ul {
+            flex-direction: row;
+            column-gap: $sp-3;
+        }
+    }
+
+    .contact {
+        width: 100%;
+        row-gap: $sp-2;
+    }
+
+    .copyright {
+        @include flexbox($jc: center, $ai:center);
+    }
+}

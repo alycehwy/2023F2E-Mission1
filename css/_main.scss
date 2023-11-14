@@ -47,6 +47,7 @@
     p {
         color: $gray-color-0;
         font-size: 260px;
+        font-weight: $font-weight-title;
         line-height: 320px;
         letter-spacing: 13px;
         margin-right: -13px;
@@ -414,8 +415,3 @@
     text-align: center;
     font-size: 14px;
 }
-
-// RWD
-// @media (max-width:992px) {
-    
-// }
