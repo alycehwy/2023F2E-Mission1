@@ -1,0 +1,131 @@
+@media (max-width: 992px) {
+    // header
+    .nav button span {
+        width: 32px;
+    }
+
+    .header-links {
+        column-gap: 20px;
+
+        li {
+            width: 32px;
+        }
+    }
+
+    .cover-bg {
+        p {
+            font-size: 170px;
+            line-height: 209.1px;
+            letter-spacing: 8.5px;
+            margin-right: -8.5px;
+        }
+    }
+
+    .cover-banner {
+        padding: $sp-1 $sp-3;
+        font-size: 32px;
+
+        span {
+            @include svgSize(42px);
+
+            .svg {
+                @include svgSize(35px);
+            }
+        }
+    }
+
+    // main - policy section
+    .policy-tab {
+        li:nth-child(2) {
+            padding: $sp-3 $sp-2;
+            word-break: keep-all;
+        }
+    }
+
+    .policy-box-detail {
+        margin: 0 $sp-2;
+    
+        h3 {
+            font-size: 22px;
+        }
+    
+    }
+
+    // main - donation section
+    .donation-word h3 {
+        word-break: normal;
+    }
+
+    .donation-option {
+        .svg {
+            display: none;
+        }
+    }
+
+    .donation-total .title-l {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 850px){
+    // header
+    .cover-bg {
+        p {
+            font-size: 150px;
+            line-height: 184.5px;
+            letter-spacing: 7.5px;
+            margin-right: -7.5px;
+        }
+    }
+
+    .cover-banner {
+        font-size: $font-title-m;
+
+        span {
+            @include svgSize(36px);
+
+            .svg {
+                @include svgSize(32px);
+            }
+        }
+    }
+    
+    // main - claims section
+    .claims {
+        h2 {
+            width: 96px;   
+        }
+    }
+
+    // main - events section
+    .events {
+        h2 {
+            width: 96px;
+        }
+    }
+
+    .event-list li {
+    
+        > div:first-child {
+            width: 40%;
+        }
+
+        > div:last-child {
+            width: 60%;
+        }
+    }
+
+    // main - policy section
+    .policy-box-detail h3 {
+        font-size: 20px;
+    }
+
+    // main - donation section
+    .donation-word h3 {
+        word-break: normal;
+    }
+
+    .donation-option {
+        padding: $sp-3;
+    }
+}

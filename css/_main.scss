@@ -9,11 +9,16 @@
     }
 
     div {
-        @include flexbox($dir: row, $cgap: $sp-3);  
+        @include flexbox($dir: row, $cgap: $sp-3);
 
         button {
+            @include flexbox($dir: row, $ai: center);
             @extend .button-sm;
         }
+    }
+
+    .list {
+        display: none;
     }
 }
 
@@ -42,7 +47,6 @@
     @include flexbox(row,center,center);
     background-color: $gray-color-2;
     border-radius: $sp-3;
-    height: 640px;
 
     p {
         color: $gray-color-0;
@@ -57,8 +61,8 @@
 .cover-black {
     width: $grid-4;
     position: absolute;
-    top: 249px;
-    left: 807px;
+    top: 38.9%;
+    left: 70.05%;
 }
 
 .cover-banner {
@@ -68,8 +72,8 @@
     color: $primary-color-3;
     border-radius: $sp-5;
     position: absolute;
-    top: 276px;
-    left: -20px;
+    top: 43.125%;
+    left: -1.74%;
 
     span {
         @include flexbox(row,center,center,0,0,inline-flex);
@@ -90,16 +94,16 @@
 .cover-button {
     @extend .button-sm;
     position: absolute;
-    top: 580px;
-    left: 839px;
+    top: 90.625%;
+    left: 72.83%;
 }
 
 // main
-// claims section
 .main {
     @include flexbox($rgap: $sp-6);
 }
 
+// main - claims section
 .claims {
     @include flexbox($dir: row, $cgap: $sp-4);
 
@@ -116,15 +120,15 @@
     }
 }
 
-// events
+// main - events section
 .events {
     @include flexbox($dir: row, $cgap: $sp-4);
 
-    > div:first-child{
+    > div:first-child {
         width: $grid-3;
     }
 
-    > div:last-child{
+    > div:last-child {
         width: $grid-9;
     }
 }
@@ -135,12 +139,11 @@
     li {
         @include flexbox($dir: row, $cgap: $sp-3);
 
-        > div:first-child{
+        > div:first-child {
             width: $grid-3 * (100% / $grid-9);
-            display: flex;
         }
 
-        > div:last-child{
+        > div:last-child {
             width: calc($grid-6 * (100% / $grid-9) + $gutter-width - $sp-3);
         }
     }
@@ -162,7 +165,7 @@
     -webkit-box-orient: vertical;
 }
 
-.event-detail{
+.event-detail {
     @include flexbox($rgap: $sp-2);
 
     > div {
@@ -174,7 +177,7 @@
     }
 }
 
-// policy section
+// main - policy section
 .policy {
     @include flexbox($rgap: $sp-4);
 }
@@ -215,6 +218,7 @@
     width: 33.33%;
     background-image: url("/svg/policy/Background.svg");
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 0 $sp-4;
     padding: 0 $sp-3;
@@ -229,13 +233,9 @@
     }
 }
 
-// donation
+// main - donation section
 .donation {
     @include flexbox($dir: row, $cgap: $sp-4);
-
-    h3 {
-        color: $gray-color-5;
-    }
 
     > div:first-child{
         width: $grid-5;
@@ -250,6 +250,11 @@
 
 .donation-word {
     @include flexbox($rgap: $sp-4);
+    
+    h3 {
+        color: $gray-color-5;
+        word-break: keep-all;
+    }
 }
 
 .donation-total {
@@ -301,17 +306,17 @@
     text-align: center;
 }
 
-// service
+// main - service section
 .service {
     position: relative;
-    height: 646px;
+    height: 662px;
 
-    > div:first-child{
+    > div:first-child {
         width: $grid-5;
         @include flexbox($rgap: $sp-4);
     }
 
-    > div:last-child{
+    > div:last-child {
         width: $grid-7;
         padding: $sp-4;
         background-color: $primary-color-1;
@@ -325,7 +330,7 @@
 .service-black {
     width: calc($grid-3 + $gutter-width);
     position: absolute;
-    left: 267px;
+    left: 23.18%;
     bottom: -2px;
 }
 
@@ -349,6 +354,10 @@
             padding: $sp-3;
             font-size: 14px;
             line-height: 24px;
+
+            &:focus {
+                outline-color: $gray-color-3;
+            }
         }
 
         textarea {
@@ -358,12 +367,8 @@
     }
 
     input[type=submit]{
-        background-color: $primary-color-3;
-        border: none;
-        border-radius: $sp-3;
-        padding: $sp-3 $sp-4;
-        color: $gray-color-5;
         margin-top: $sp-4;
+        @extend .button-lg;
     }
 }
 
@@ -377,13 +382,17 @@
 
         > div {
             @include flexbox($dir: row, $cgap: $sp-4);
-            width: $grid-4;
+            width: calc($col-width * 4 + $gutter-width * 3);
         }
     }
 }
 
 .footer-logo{
     height: $sp-6;
+}
+
+.footer-social {
+    display: none;
 }
 
 .footer-links, .contact {

@@ -17,6 +17,10 @@
     @include titleStyle($font-subtitle,$font-weight);
 }
 
+.title-format {
+    @include flexbox($rgap: $sp-2);
+}
+
 // button-sm style
 .button-sm {
     @include flexbox(row);
@@ -33,6 +37,19 @@
 .button-sm:hover, .button-sm:active {
     background-color: $primary-color-4;
 }
+
+.button-lg {
+    background-color: $primary-color-3;
+    border: none;
+    border-radius: $sp-3;
+    padding: $sp-3 $sp-4;
+    color: $gray-color-5;
+}
+
+.button-lg:hover, .button-lg:active {
+    background-color: $primary-color-4;
+}
+
 
 // link-light/link-dark style
 .link-light {
@@ -82,6 +99,9 @@
 .svg {
     display: inline-block;
     background-color: $gray-color-5;
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
 }
 
 .svg-xs {
