@@ -2,19 +2,9 @@
 .nav {
     @include flexbox(row,space-between,center);
     padding: $sp-3 0;
-    
-    img {
-        display: flex;
-        height: $sp-5;
-    }
 
     div {
         @include flexbox($dir: row, $cgap: $sp-3);
-
-        button {
-            @include flexbox($dir: row, $ai: center);
-            @extend .button-sm;
-        }
     }
 
     .list {
@@ -22,12 +12,18 @@
     }
 }
 
+.coins-btn {
+    @include flexbox($dir: row, $ai: center);
+    @extend .button-sm;
+}
+
+.header-logo {
+    display: flex;
+    height: $sp-5;
+}
+
 .header-links {
     @include flexbox($dir: row, $ai: center, $cgap: 24px);
-
-    a {
-        @extend .link-light;
-    }
 }
 
 .social {
@@ -210,7 +206,6 @@
 
     > div {
         display: flex;
-        height: 268px;
     }
 }
 
@@ -223,13 +218,10 @@
     margin: 0 $sp-4;
     padding: 0 $sp-3;
     @include flexbox($ai: center, $rgap: $sp-2);
+    text-align: center;
 
     h3 {
         color: $gray-color-5;
-    }
-
-    p {
-        text-align: center;
     }
 }
 

@@ -15,22 +15,42 @@
         <header>
             <div class="header">
                 <div class="nav">
-                    <h1><a href="#"><img src="/img/header-logo.png" alt="header-logo"></a></h1>
+                    <h1><a href="#"><img class="header-logo" src="/img/header-logo.png" alt="header-logo"></a></h1>
                     <div>
-                        <button><i class="hand-coins svg svg-s"></i><span>小額捐款</span></button>
+                        <button class="coins-btn"><i class="hand-coins svg svg-s"></i><span>小額捐款</span></button>
                         <ul class="header-links">
-                            <li><a href="#"><span>候選主張</span></a></li>
-                            <li><a href="#"><span>最新活動</span></a></li>
-                            <li><a href="#"><span>政策議題</span></a></li>
-                            <li><a href="#"><span>服務信箱</span></a></li>
+                            <li><a class="link-light" href="#"><span>候選主張</span></a></li>
+                            <li><a class="link-light" href="#"><span>最新活動</span></a></li>
+                            <li><a class="link-light" href="#"><span>政策議題</span></a></li>
+                            <li><a class="link-light" href="#"><span>服務信箱</span></a></li>
                         </ul>
                     </div>
                     <ul class="social">
-                        <li><a href="#"><i class="facebook-logo svg svg-m"></i></a></li>
+                        <li><a class="link-social" href="#"><i class="facebook-logo svg svg-m"></i></a></li>
                         <li><a href="#"><i class="ig-logo svg svg-m"></i></a></li>
                         <li><a href="#"><i class="youtube-logo svg svg-m"></i></a></li>
                     </ul>
                     <i class="list svg svg-m"></i>
+                </div>
+                <div class="nav-mobile hide">
+                    <div class="menu-close"></div>
+                    <div>
+                        <h1><a href="#"><img class="header-logo" src="/img/header-logo.png" alt="header-logo"></a></h1>
+                        <div>
+                            <button class="coins-btn"><i class="hand-coins svg svg-s"></i><span>小額捐款</span></button>
+                            <ul class="header-links">
+                                <li><a class="link-light" href="#"><span>候選主張</span></a></li>
+                                <li><a class="link-light" href="#"><span>最新活動</span></a></li>
+                                <li><a class="link-light" href="#"><span>政策議題</span></a></li>
+                                <li><a class="link-light" href="#"><span>服務信箱</span></a></li>
+                            </ul>
+                        </div>
+                        <ul class="social">
+                            <li><a href="#"><i class="facebook-logo svg svg-m"></i>Facebook</a></li>
+                            <li><a href="#"><i class="ig-logo svg svg-m"></i>Instagram</a></li>
+                            <li><a href="#"><i class="youtube-logo svg svg-m"></i>YouTube</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="cover">
                     <div class="cover-bg">
@@ -121,11 +141,11 @@
                         </div>
                         <div>
                             <ul class="policy-tab">
-                                <li class="title-sub active">寵物醫療保障方案</li>
-                                <li class="title-sub">寵物休閒<wbr>與娛樂場所</li>
-                                <li class="title-sub">推廣寵物飼養教育</li>
+                                <li data-page='1' class="title-sub active">寵物醫療保障方案</li>
+                                <li data-page='2' class="title-sub">寵物休閒<wbr>與娛樂場所</li>
+                                <li data-page='3' class="title-sub">推廣寵物飼養教育</li>
                             </ul>
-                            <div class="policy-box">
+                            <div data-page='1' class="policy-box">
                                 <h3 class="title-m">為毛孩子謀福利！<wbr/>推動寵物醫療保障方案</h3>
                                 <div>
                                     <div class="policy-box-detail">
@@ -151,7 +171,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="policy-box hide">
+                            <div data-page='2' class="policy-box hide">
                                 <h3 class="title-m">打造休閒天堂！推廣寵物休閒與娛樂場所</h3>
                                 <div>
                                     <div class="policy-box-detail">
@@ -177,7 +197,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="policy-box hide">
+                            <div data-page='3' class="policy-box hide">
                                 <h3 class="title-m">推廣寵物飼養教育，讓愛更加專業</h3>
                                 <div>
                                     <div class="policy-box-detail">

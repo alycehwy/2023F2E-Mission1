@@ -1,16 +1,32 @@
-// const cover = document.querySelector('.cover');
-// const coverBlack = document.querySelector('.cover-black');
-// const coverBlackPos = coverBlack.getBoundingClientRect().right;
+const body = document.querySelector('body');
+const policyTabs = document.querySelectorAll('.policy-tab li');
+const policyBoxes = document.querySelectorAll('.policy-box');
+const list = document.querySelector('.list');
+const navMobile = document.querySelector('.nav-mobile');
 
+function openMobileMenu(){
+    navMobile.classList.remove('hide');
+    body.classList.add('fixedWindow');
+}
 
-// function windowResize(event){
-//     // console.log(coverBlack.offsetLeft);
-//     // console.dir(coverBlack.offsetLeft + coverBlack.clientWidth)
-//     // console.dir(coverBlack.getBoundingClientRect().right)
-//     console.log(event.target.innerWidth)
-//     if(event.target.innerWidth <= 1280){
-//         console.log('change');
-//     }
-// }
+function closeMobileMenu(event){
+    if(event.target.classList.value === 'menu-close'){
+        navMobile.classList.add('hide');
+    }
+}
 
-// window.addEventListener("resize", windowResize);
+function changePolicyBox(){
+    policyTabs.forEach(tab => tab.classList.remove('active'));
+    this.classList.add('active');
+    policyBoxes.forEach(box => {
+        if(box.dataset.page === this.dataset.page){
+            box.classList.remove('hide');
+        }else{
+            box.classList.add('hide');
+        }
+    });
+}
+
+list.addEventListener('click',openMobileMenu);
+policyTabs.forEach(tab => tab.addEventListener('click',changePolicyBox));
+navMobile.addEventListener('click',closeMobileMenu);

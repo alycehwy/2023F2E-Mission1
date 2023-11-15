@@ -68,7 +68,6 @@
     color: $primary-color-2;
 }
 
-
 .link-social:hover, .link-social:active {
     background-color: $primary-color-5;
 }
@@ -91,7 +90,7 @@
 }
 
 // hidden
-.policy-box.hide {
+.policy-box.hide, .nav-mobile.hide {
     display: none;
 }
 
@@ -161,4 +160,8 @@ footer {
     }
 } 
 
+.fixedWindow {
+    position: fixed;
+    width: 100%;
+}
 
