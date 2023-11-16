@@ -10,7 +10,7 @@ function openMobileMenu(){
 }
 
 function closeMobileMenu(event){
-    if(event.target.classList.value === 'menu-close'){
+    if(event.target.className === 'menu-close'){
         navMobile.classList.add('hide');
     }
 }

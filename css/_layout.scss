@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 // screen size + center
 .screen-size {
     max-width: $destop-width;
@@ -23,15 +27,19 @@
 
 // button-sm style
 .button-sm {
-    @include flexbox(row);
-    column-gap: $sp-2;
-    padding: $sp-2 $sp-3;
+    padding: 0;
     background-color: $primary-color-3;
     border-radius: $sp-5;
     border: none;
-    font-size: $font-body;
-    font-weight: $font-weight;
-    line-height: $line-height-body;
+    a {
+        @include flexbox(row, $ai:center);
+        padding: $sp-2 $sp-3;
+        column-gap: $sp-2;
+        font-size: $font-body;
+        font-weight: $font-weight;
+        line-height: $line-height-body;
+        color: $gray-color-5;
+    }
 }
 
 .button-sm:hover, .button-sm:active {

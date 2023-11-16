@@ -13,7 +13,6 @@
 }
 
 .coins-btn {
-    @include flexbox($dir: row, $ai: center);
     @extend .button-sm;
 }
 
@@ -167,7 +166,7 @@
     > div {
         @include flexbox(row,space-between,center);
 
-        span {
+        > span {
             color: $primary-color-5;
         }
     }
@@ -203,6 +202,7 @@
     @include flexbox($ai: center, $rgap: $sp-5);
     padding: $sp-4 0;
     background-color: $primary-color-1;
+    min-height: 452px;
 
     > div {
         display: flex;
