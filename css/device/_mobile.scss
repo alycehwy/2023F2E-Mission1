@@ -132,35 +132,13 @@
     }
 
     // main - claims section
-    .claims {
-        flex-direction: column;
-        row-gap: $sp-3;
-
-        div:first-child {
-            width: 100%;
-        }
-
-        div:last-child {
-            width: 100%;
-
-            p {
-                font-size: $font-body;
-                font-weight: $font-weight;
-                line-height: $line-height-body;
-            }
-        }
+    .claims p {
+        font-size: $font-body;
+        font-weight: $font-weight;
+        line-height: $line-height-body;
     }
 
     // main - events section
-    .events {
-        flex-direction: column;
-        row-gap: $sp-3;
-
-        > div:first-child, > div:last-child{
-            width: 100%;;
-        }
-    }
-
     .event-list li {
         flex-direction: column;
         row-gap: $sp-3;
@@ -229,20 +207,8 @@
         row-gap: $sp-3;
     }
 
-    .donation-total {
-        padding: $sp-3;
-
-        .title-l {
-            font-size: $font-title-l;
-        }
-    }
-
-    .donation-option {
-        padding: $sp-3;
-
-        .svg {
-            display: none;
-        }
+    .donation-total .title-l {
+        font-size: $font-title-l;
     }
 
     .donation-option-detail {

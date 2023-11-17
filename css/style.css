@@ -555,15 +555,15 @@ footer h4 {
        column-gap: 16px;
 }
 .event-list li > div:first-child {
-  width: 30.8411214953%;
+  width: 264px;
 }
 .event-list li > div:last-child {
-  width: calc(65.4205607477% + 32px - 16px);
+  width: calc(100% - 264px - 16px);
 }
 
 .event-img {
-  width: calc(100% - 13.11px);
-  height: calc(100% - 13.53px);
+  width: 250.89px;
+  height: 144.47px;
   border: 2px solid #EEFFA9;
   border-radius: 16px;
   box-shadow: 13.11px 13.53px #EEFFA9;
@@ -662,6 +662,7 @@ footer h4 {
 }
 .policy-box-detail h3 {
   color: #000000;
+  word-break: keep-all;
 }
 
 .donation {
@@ -932,9 +933,6 @@ footer h4 {
     letter-spacing: 12px;
     margin-right: -12px;
   }
-  .policy-box-detail h3 {
-    word-break: keep-all;
-  }
 }
 @media (max-width: 1142px) {
   .cover-bg p {
@@ -963,20 +961,10 @@ footer h4 {
     width: 42px;
     height: 42px;
   }
-  .policy-box-detail {
-    margin: 0 12px;
-  }
-  .policy-box-detail h3 {
-    font-size: 22px;
-  }
 }
 @media (max-width: 992px) {
   .nav button span {
     width: 32px;
-  }
-  .header-links {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
   }
   .header-links li {
     width: 32px;
@@ -988,7 +976,6 @@ footer h4 {
     margin-right: -8.5px;
   }
   .cover-banner {
-    padding: 4px 16px;
     font-size: 32px;
   }
   .cover-banner span {
@@ -999,21 +986,40 @@ footer h4 {
     width: 35px;
     height: 35px;
   }
+  .claims {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .claims h2 {
+    width: 100%;
+  }
+  .claims div:first-child {
+    width: 100%;
+  }
+  .claims div:last-child {
+    width: 100%;
+  }
+  .events {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .events > div:first-child, .events > div:last-child {
+    width: 100%;
+  }
   .policy-tab li:nth-child(2) {
     padding: 16px 8px;
-    word-break: keep-all;
-  }
-  .policy-box-detail {
-    margin: 0 8px;
-  }
-  .policy-box-detail h3 {
-    font-size: 20px;
   }
   .donation-word h3 {
-    word-break: normal;
+    word-break: unset;
+  }
+  .donation-option {
+    padding: 16px;
   }
   .donation-option .svg {
     display: none;
+  }
+  .donation-total {
+    padding: 16px;
   }
   .donation-total .title-l {
     font-size: 34px;
@@ -1036,24 +1042,6 @@ footer h4 {
   .cover-banner span .svg {
     width: 32px;
     height: 32px;
-  }
-  .claims h2 {
-    width: 96px;
-  }
-  .events h2 {
-    width: 96px;
-  }
-  .event-list li > div:first-child {
-    width: 40%;
-  }
-  .event-list li > div:last-child {
-    width: 60%;
-  }
-  .donation-word h3 {
-    word-break: normal;
-  }
-  .donation-option {
-    padding: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -1196,27 +1184,10 @@ footer h4 {
     padding: 32px 16px;
     row-gap: 32px;
   }
-  .claims {
-    flex-direction: column;
-    row-gap: 16px;
-  }
-  .claims div:first-child {
-    width: 100%;
-  }
-  .claims div:last-child {
-    width: 100%;
-  }
-  .claims div:last-child p {
+  .claims p {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.75;
-  }
-  .events {
-    flex-direction: column;
-    row-gap: 16px;
-  }
-  .events > div:first-child, .events > div:last-child {
-    width: 100%;
   }
   .event-list li {
     flex-direction: column;
@@ -1267,17 +1238,8 @@ footer h4 {
   .donation-word {
     row-gap: 16px;
   }
-  .donation-total {
-    padding: 16px;
-  }
   .donation-total .title-l {
     font-size: 48px;
-  }
-  .donation-option {
-    padding: 16px;
-  }
-  .donation-option .svg {
-    display: none;
   }
   .donation-option-detail {
     padding: unset;

@@ -1,40 +1,30 @@
 @media (max-width: 1220px){
     // header
-    .cover-bg {
-        p {
-            font-size: 240px;
-            line-height: 295.2px;
-            letter-spacing: 12px;
-            margin-right: -12px;
-        }
-    }
-
-    .policy-box-detail h3 {
-        word-break: keep-all;
+    .cover-bg p {
+        font-size: 240px;
+        line-height: 295.2px;
+        letter-spacing: 12px;
+        margin-right: -12px;
     }
 }
 
 @media (max-width: 1142px){
     // header
-    .cover-bg {
-        p {
-            font-size: 220px;
-            line-height: 270.6px;
-            letter-spacing: 11px;
-            margin-right: -11px;
-        }
+    .cover-bg p {
+        font-size: 220px;
+        line-height: 270.6px;
+        letter-spacing: 11px;
+        margin-right: -11px;
     }
 }
 
 @media (max-width: 1100px){
     // header
-    .cover-bg {
-        p {
-            font-size: 200px;
-            line-height: 246px;
-            letter-spacing: 10px;
-            margin-right: -10px;
-        }
+    .cover-bg p {
+        font-size: 200px;
+        line-height: 246px;
+        letter-spacing: 10px;
+        margin-right: -10px;
     }
 
     .cover-banner {
@@ -48,15 +38,5 @@
                 @include svgSize(42px);
             }
         }
-    }
-
-    // main - policy section
-    .policy-box-detail {
-        margin: 0 12px;
-    
-        h3 {
-            font-size: 22px;
-        }
-    
     }
 }

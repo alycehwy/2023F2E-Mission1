@@ -135,18 +135,18 @@
         @include flexbox($dir: row, $cgap: $sp-3);
 
         > div:first-child {
-            width: $grid-3 * (100% / $grid-9);
+            width: 264px;
         }
 
         > div:last-child {
-            width: calc($grid-6 * (100% / $grid-9) + $gutter-width - $sp-3);
+            width: calc(100% - 264px - $sp-3);
         }
     }
 }
 
 .event-img {
-    width: calc(100% - 13.11px);
-    height: calc(100% - 13.53px);
+    width: 264px - 13.11px;
+    height: 158px - 13.53px;
     border: 2px solid $primary-color-2;
     border-radius: $sp-3;
     box-shadow: 13.11px 13.53px $primary-color-2;
@@ -222,6 +222,7 @@
 
     h3 {
         color: $gray-color-5;
+        word-break: keep-all;
     }
 }
 
