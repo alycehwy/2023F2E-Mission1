@@ -44,14 +44,14 @@
         display: flex;
 
         > div:first-child {
-            width: 40%;
+            width: calc(100% - 225px);
             height: 100%;
             background-color: rgba(255, 255, 255, 0.30);
             backdrop-filter: blur(4px);
         }
 
         > div:last-child {
-            width: 60%;
+            width: 225px;
             height: 100%;
             background: $gray-color-0;
             padding: $sp-4 $sp-3;
@@ -78,7 +78,7 @@
             @include flexbox($rgap: $sp-3);
 
             a {
-                @include flexbox($dir: row); 
+                @include flexbox($dir: row, $cgap:$sp-1); 
                 width: 100%;
                 color: $gray-color-5;
                 
@@ -171,20 +171,7 @@
     .policy-box {
         > h3 {
             word-break: keep-all;
-            text-align: center;
         }
-
-        > div {
-            flex-direction: column;
-            row-gap: $sp-4;
-            height: auto;
-        }
-    }
-
-    .policy-box-detail {
-        width: 100%;
-        margin: unset;
-        background-size: auto;
     }
 
     // main - donation section

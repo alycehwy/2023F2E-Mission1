@@ -45,7 +45,7 @@
         }
     }
 
-      // main - events section
+    // main - events section
     .events {
         flex-direction: column;
         row-gap: $sp-3;
@@ -103,5 +103,21 @@
                 @include svgSize(32px);
             }
         }
+    }
+
+     // main - policy section
+    .policy-box {
+
+        > div {
+            flex-direction: column;
+            row-gap: $sp-4;
+            height: auto;
+        }
+    }
+
+    .policy-box-detail {
+        width: 100%;
+        margin: unset;
+        background-size: auto;
     }
 }

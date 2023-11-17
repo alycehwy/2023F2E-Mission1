@@ -98,7 +98,7 @@ html {
 }
 
 // hidden
-.policy-box.hide, .nav-mobile.hide {
+.policy-box.hide, .nav-mobile.hide, .modal-candidate-info.hide{
     display: none;
 }
 
@@ -129,6 +129,37 @@ html {
 
 .svg-xl {
     @include svgSize(128px);
+}
+
+// animation
+.animate-fadeIn {
+    animation: fadeIn 2s;
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+}
+
+.animate-bounce {
+    animation: bounce 0.5s infinite alternate;
+    
+    @keyframes bounce {
+        from { transform:translateY(0px) }
+        to { transform:translateY(-10px) }
+    }
+}
+
+.animate-typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s infinite;
+
+    @keyframes typing {
+        from { width: 0% }
+        to { width: 100% }
+    }
+
 }
 
 // body

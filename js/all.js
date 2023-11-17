@@ -3,17 +3,10 @@ const policyTabs = document.querySelectorAll('.policy-tab li');
 const policyBoxes = document.querySelectorAll('.policy-box');
 const list = document.querySelector('.list');
 const navMobile = document.querySelector('.nav-mobile');
+const modalCandidateInfo = document.querySelector('.modal-candidate-info');
+const clostBtn = document.querySelector('.close');
+const candidateInfoBtn = document.querySelector('.cover-button');
 
-function openMobileMenu(){
-    navMobile.classList.remove('hide');
-    body.classList.add('fixedWindow');
-}
-
-function closeMobileMenu(event){
-    if(event.target.className === 'menu-close'){
-        navMobile.classList.add('hide');
-    }
-}
 
 function changePolicyBox(){
     policyTabs.forEach(tab => tab.classList.remove('active'));
@@ -27,6 +20,22 @@ function changePolicyBox(){
     });
 }
 
-list.addEventListener('click',openMobileMenu);
+function toggleMobileMenu(){
+    navMobile.classList.toggle('hide');
+    body.classList.toggle('fixedWindow');
+}
+
+function toggleModal(){
+    modalCandidateInfo.classList.toggle('hide');
+    body.classList.toggle('fixedWindow');
+}
+
 policyTabs.forEach(tab => tab.addEventListener('click',changePolicyBox));
-navMobile.addEventListener('click',closeMobileMenu);
+
+list.addEventListener('click',toggleMobileMenu);
+navMobile.addEventListener('click',(event) => event.target.className === 'menu-close' ? toggleMobileMenu() : '');
+navMobile.querySelectorAll('a').forEach(aTag => aTag.addEventListener('click',toggleMobileMenu));
+
+candidateInfoBtn.addEventListener('click',toggleModal);
+modalCandidateInfo.addEventListener('click',(event) => event.target.className === 'modal-candidate-info' ? toggleModal() : '');
+clostBtn.addEventListener('click',toggleModal);

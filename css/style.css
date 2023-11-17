@@ -292,7 +292,7 @@ html {
   background-color: #FFFFFF;
 }
 
-.policy-box.hide, .nav-mobile.hide {
+.policy-box.hide, .nav-mobile.hide, .modal-candidate-info.hide {
   display: none;
 }
 
@@ -330,6 +330,44 @@ html {
 .svg-xl {
   width: 128px;
   height: 128px;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-bounce {
+  animation: bounce 0.5s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s infinite;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 body {
@@ -642,6 +680,9 @@ footer h4 {
 .policy-box > div {
   display: flex;
 }
+.policy-box > h3 {
+  text-align: center;
+}
 
 .policy-box-detail {
   width: 33.33%;
@@ -662,7 +703,6 @@ footer h4 {
 }
 .policy-box-detail h3 {
   color: #000000;
-  word-break: keep-all;
 }
 
 .donation {
@@ -926,6 +966,83 @@ footer h4 {
   font-size: 14px;
 }
 
+.modal-candidate-info {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-candidate-info > div {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 50px;
+  border: 1px solid #888;
+  border-radius: 30px;
+  width: 80%;
+}
+
+.modal-candidate-info-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  padding: 50px;
+  padding-left: 250px;
+  position: relative;
+}
+.modal-candidate-info-detail > div {
+  width: 100%;
+  background-color: #D1FA31;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: center;
+  row-gap: unset;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  padding: 20px;
+  margin-top: 10px;
+}
+.modal-candidate-info-detail h1 {
+  font-size: 100px;
+  color: #000000;
+}
+.modal-candidate-info-detail p {
+  color: #000000;
+}
+.modal-candidate-info-detail ul {
+  padding-left: 30px;
+}
+.modal-candidate-info-detail li {
+  list-style: disc;
+}
+.modal-candidate-info-detail img {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1220px) {
   .cover-bg p {
     font-size: 240px;
@@ -1043,6 +1160,16 @@ footer h4 {
     width: 32px;
     height: 32px;
   }
+  .policy-box > div {
+    flex-direction: column;
+    row-gap: 32px;
+    height: auto;
+  }
+  .policy-box-detail {
+    width: 100%;
+    margin: unset;
+    background-size: auto;
+  }
 }
 @media (max-width: 767px) {
   header, main, footer {
@@ -1086,14 +1213,14 @@ footer h4 {
     display: flex;
   }
   .nav-mobile > div:first-child {
-    width: 40%;
+    width: calc(100% - 225px);
     height: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
   }
   .nav-mobile > div:last-child {
-    width: 60%;
+    width: 225px;
     height: 100%;
     background: #FFFFFF;
     padding: 32px 16px;
@@ -1144,8 +1271,8 @@ footer h4 {
     justify-content: unset;
     align-items: unset;
     row-gap: unset;
-    -moz-column-gap: unset;
-         column-gap: unset;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
     width: 100%;
     color: #000000;
   }
@@ -1211,17 +1338,6 @@ footer h4 {
   }
   .policy-box > h3 {
     word-break: keep-all;
-    text-align: center;
-  }
-  .policy-box > div {
-    flex-direction: column;
-    row-gap: 32px;
-    height: auto;
-  }
-  .policy-box-detail {
-    width: 100%;
-    margin: unset;
-    background-size: auto;
   }
   .donation {
     flex-direction: column;
