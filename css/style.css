@@ -292,7 +292,7 @@ html {
   background-color: #FFFFFF;
 }
 
-.policy-box.hide, .nav-mobile.hide, .modal-candidate-info.hide {
+.policy-box.hide, .nav-mobile.hide, .modal-candidate-info.hide, .modal-service-form.hide {
   display: none;
 }
 
@@ -966,7 +966,19 @@ footer h4 {
   font-size: 14px;
 }
 
-.modal-candidate-info {
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-candidate-info, .modal-service-form {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -976,7 +988,7 @@ footer h4 {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.modal-candidate-info > div {
+.modal-candidate-info > div, .modal-service-form > div {
   background-color: #fefefe;
   margin: 5% auto;
   padding: 50px;
@@ -1031,16 +1043,35 @@ footer h4 {
   left: 0;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal-service-form-detail {
+  padding: 80px 120px 30px 50px;
+  position: relative;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  row-gap: 50px;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
-.close:hover, .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.modal-service-form-detail p:nth-child(1) {
+  font-size: 40px;
+}
+.modal-service-form-detail p:nth-child(2) {
+  color: #000000;
+  background-color: #D1FA31;
+  padding: 30px;
+  border-radius: 20px;
+}
+.modal-service-form-detail p:nth-child(2) span {
+  font-size: 48px;
+}
+.modal-service-form-detail img {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media (max-width: 1220px) {

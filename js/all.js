@@ -4,9 +4,20 @@ const policyBoxes = document.querySelectorAll('.policy-box');
 const list = document.querySelector('.list');
 const navMobile = document.querySelector('.nav-mobile');
 const modalCandidateInfo = document.querySelector('.modal-candidate-info');
-const clostBtn = document.querySelector('.close');
 const candidateInfoBtn = document.querySelector('.cover-button');
+const modalServiceForm = document.querySelector('.modal-service-form');
+const serviceForm = document.querySelector('.service-form');
+let currentPolicyIndex = 0;
 
+function carousel() {
+    policyTabs.forEach(tab => tab.classList.remove('active'));
+    policyBoxes.forEach(box => box.classList.add('hide'));
+    currentPolicyIndex >= policyBoxes.length ? currentPolicyIndex = 0 : ''; 
+    policyTabs[currentPolicyIndex].classList.add('active');
+    policyBoxes[currentPolicyIndex].classList.remove('hide');
+    currentPolicyIndex++;
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 
 function changePolicyBox(){
     policyTabs.forEach(tab => tab.classList.remove('active'));
@@ -18,6 +29,8 @@ function changePolicyBox(){
             box.classList.add('hide');
         }
     });
+    // let the carousel start after the clicked page
+    currentPolicyIndex = this.dataset.page;
 }
 
 function toggleMobileMenu(){
@@ -25,17 +38,35 @@ function toggleMobileMenu(){
     body.classList.toggle('fixedWindow');
 }
 
-function toggleModal(){
+function toggleInfoModal(){
     modalCandidateInfo.classList.toggle('hide');
     body.classList.toggle('fixedWindow');
 }
 
+function toggleFormModal(){
+    modalServiceForm.classList.toggle('hide');
+    body.classList.toggle('fixedWindow');
+}
+
+// policy box carousel and change
+carousel();
 policyTabs.forEach(tab => tab.addEventListener('click',changePolicyBox));
 
+// mobile menu open/close
 list.addEventListener('click',toggleMobileMenu);
 navMobile.addEventListener('click',(event) => event.target.className === 'menu-close' ? toggleMobileMenu() : '');
 navMobile.querySelectorAll('a').forEach(aTag => aTag.addEventListener('click',toggleMobileMenu));
 
-candidateInfoBtn.addEventListener('click',toggleModal);
-modalCandidateInfo.addEventListener('click',(event) => event.target.className === 'modal-candidate-info' ? toggleModal() : '');
-clostBtn.addEventListener('click',toggleModal);
+// candiate info modal box open/close
+candidateInfoBtn.addEventListener('click',toggleInfoModal);
+modalCandidateInfo.addEventListener('click',(event) => event.target.className === 'modal-candidate-info' ? toggleInfoModal() : '');
+modalCandidateInfo.querySelector('.close').addEventListener('click',toggleInfoModal);
+
+// service form modal box open close
+serviceForm.addEventListener('submit',(event) => {
+    event.preventDefault();
+    toggleFormModal();
+});
+modalServiceForm.addEventListener('click',(event) => event.target.className === 'modal-service-form' ? toggleFormModal() : '');
+modalServiceForm.querySelector('.close').addEventListener('click',toggleFormModal);
+
