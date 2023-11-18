@@ -82,6 +82,56 @@
             font-size: 34px;
         }
     }
+
+     // modal box
+    .modal-candidate-info-detail {
+        padding: 20px;
+
+        > div {
+            margin: 0;
+            order: 2;
+            width: 70%;
+        }
+
+        h1 {
+            padding: 0;
+        }
+
+        p {
+            padding: 0;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        img {
+            position: unset;
+            order: 1;
+            margin-bottom: 20px;
+        }
+    }
+
+    .modal-service-form-detail {
+        text-align: center;
+        padding: 30px;
+        p:nth-child(1) {
+            font-size: 32px;
+        }
+
+        p:nth-child(2) {
+            font-size: 22px;
+            
+            span {
+                font-size: 36px;
+            }
+        }
+        
+        img {
+            width: 100px;
+            right: -10px;
+        }
+    }
 }
 
 @media (max-width: 850px){

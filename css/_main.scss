@@ -458,7 +458,7 @@
 .modal-candidate-info-detail {
     @include flexbox($ai: center);
     padding: 50px;
-    padding-left: 250px;
+    padding-left: 200px;
     position: relative;
 
     > div {
@@ -466,21 +466,23 @@
         background-color: $primary-color-3;
         border-radius: 20px;
         @include flexbox($ai: center);
-        padding: 20px;
         margin-top: 10px;
+        padding: 20px;
     }
 
     h1 {
         font-size: 100px;
         color: $gray-color-5;
+        padding-left: 80px;
     }
 
     p {
         color: $gray-color-5; 
+        padding-left: 70px;
     }
 
     ul {
-        padding-left: 30px;
+        padding-left: 100px;
     }
 
     li {
@@ -488,15 +490,15 @@
     }
 
     img {
-        width: 400px;
+        width: 350px;
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: 20px;
+        left: 40px;
     }
 }
 
 .modal-service-form-detail {
-    padding: 80px 120px 30px 50px;
+    padding: 30px 120px 30px 50px;
     position: relative;
     margin-right: 30px;
     @include flexbox($rgap:50px);
@@ -517,7 +519,7 @@
     }
 
     img {
-        width: 400px;
+        width: 380px;
         position: absolute;
         right: 0;
         bottom: 0;
