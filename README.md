@@ -1,26 +1,26 @@
 # 2023 F2E - Mission 1 - 立委競選官網
 ![cover](https://images.thef2e.com//works/819_2023-11-08T16:02:57.321Z.png)
->喵喵權益至上！  
->推動更完善的貓咪福利和相關政策，投資台灣的未來！  
->黑新星為您服務！  
->(此專案是由六角學院所舉辦的 2023 The F2E 之參賽作品：第一關 - 立委競選官網)
+  喵喵權益至上！  
+  推動更完善的貓咪福利和相關政策，投資台灣的未來！  
+  黑新星為您服務！  
+  (此專案是由六角學院所舉辦的 2023 The F2E 之參賽作品：第一關 - 立委競選官網)  
 
->Meow Meow’s rights come first!  
->Promote better cat welfare and related policies are invest in Taiwan’s future!  
->Supernova Black is always by your side!  
->(This project is for 2023 The F2E event is organized by HexSchool: Mission 1 - Legislator Election Official Website)
+  Meow Meow’s rights come first!  
+  Promote better cat welfare and related policies are invest in Taiwan’s future!  
+  Supernova Black is always by your side!  
+  (This project is for 2023 The F2E event is organized by HexSchool: Mission 1 - Legislator Election Official Website)  
 
 ## Description
 
->此作品為靜態網頁主要用來練習切版以及 RWD，
->單純使用 Html、SCSS、JavaScript來建立，以驗收學習成果。  
+  此作品為靜態網頁主要用來練習切版以及 RWD，  
+  單純使用 Html、SCSS、JavaScript來建立，以驗收學習成果。  
 
->This is a static web page used to practice building a website and RWD.  
->It was created using HTML, SCSS, and JavaScript to assess my learning progress.
+  This is a static web page used to practice building a website and RWD.  
+  It was created using HTML, SCSS, and JavaScript to assess my learning progress.  
 
 ## Demo
 
->[Demo](https://alycehwy.github.io/2023F2E-Mission1/)
+  [Demo](https://alycehwy.github.io/2023F2E-Mission1/)
 
 ## UI Authors
 
@@ -45,6 +45,6 @@
 
 ## Feedback
 
->如有任何建議或問題，歡迎與我聯絡～  
->If you have any feedback, please reach out to me at alycehwy@gmail.com
+  如有任何建議或問題，歡迎與我聯絡～  
+  If you have any feedback, please reach out to me at alycehwy@gmail.com  
 
