@@ -128,7 +128,7 @@
         }
         
         img {
-            width: 100px;
+            width: 150px;
             right: -10px;
         }
     }
@@ -157,17 +157,24 @@
 
      // main - policy section
     .policy-box {
-
         > div {
             flex-direction: column;
-            row-gap: $sp-4;
-            height: auto;
+            justify-content: space-between;
+            height: 800px;
         }
     }
 
     .policy-box-detail {
         width: 100%;
         margin: unset;
+        padding: 0 80px;
         background-size: auto;
+    }
+
+    // modal box
+    .modal-service-form-detail {
+        img {
+            width: 100px;
+        }
     }
 }

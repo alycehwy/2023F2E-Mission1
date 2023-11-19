@@ -994,7 +994,7 @@ footer h4 {
   padding: 50px;
   border: 1px solid #888;
   border-radius: 30px;
-  width: 80%;
+  width: 1024px;
 }
 
 .modal-candidate-info-detail {
@@ -1098,7 +1098,7 @@ footer h4 {
     width: 90%;
   }
   .modal-service-form-detail img {
-    width: 250px;
+    width: 300px;
   }
 }
 @media (max-width: 1142px) {
@@ -1107,6 +1107,9 @@ footer h4 {
     line-height: 270.6px;
     letter-spacing: 11px;
     margin-right: -11px;
+  }
+  .modal-candidate-info > div, .modal-service-form > div {
+    width: 80%;
   }
   .modal-service-form-detail p:nth-child(1) {
     font-size: 36px;
@@ -1117,9 +1120,6 @@ footer h4 {
   }
   .modal-service-form-detail p:nth-child(2) span {
     font-size: 40px;
-  }
-  .modal-service-form-detail img {
-    width: 200px;
   }
 }
 @media (max-width: 1100px) {
@@ -1140,6 +1140,9 @@ footer h4 {
   .cover-banner span .svg {
     width: 42px;
     height: 42px;
+  }
+  .modal-service-form-detail img {
+    width: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -1240,7 +1243,7 @@ footer h4 {
     font-size: 36px;
   }
   .modal-service-form-detail img {
-    width: 100px;
+    width: 150px;
     right: -10px;
   }
 }
@@ -1264,13 +1267,17 @@ footer h4 {
   }
   .policy-box > div {
     flex-direction: column;
-    row-gap: 32px;
-    height: auto;
+    justify-content: space-between;
+    height: 800px;
   }
   .policy-box-detail {
     width: 100%;
     margin: unset;
+    padding: 0 80px;
     background-size: auto;
+  }
+  .modal-service-form-detail img {
+    width: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -1438,8 +1445,14 @@ footer h4 {
     padding: 16px 0;
     word-break: keep-all;
   }
+  .policy-box > div {
+    height: 900px;
+  }
   .policy-box > h3 {
     word-break: keep-all;
+  }
+  .policy-box-detail {
+    padding: 0 16px;
   }
   .donation {
     flex-direction: column;
@@ -1527,41 +1540,51 @@ footer h4 {
     -moz-column-gap: unset;
          column-gap: unset;
   }
+  .modal-candidate-info > div, .modal-service-form > div {
+    padding: 20px;
+  }
+  .modal-candidate-info-detail {
+    padding: 30px;
+    margin-left: 15px;
+  }
   .modal-candidate-info-detail > div {
     width: 100%;
-    padding: 45px;
-    padding: 40px;
+    padding: 20px 25px;
   }
   .modal-candidate-info-detail > div p {
     margin-top: 10px;
+  }
+  .modal-candidate-info-detail > div ul {
+    padding-left: 15px;
   }
   .modal-candidate-info-detail > p {
     word-break: keep-all;
     text-align: center;
   }
   .modal-candidate-info-detail h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
   .modal-candidate-info-detail img {
     width: 200px;
   }
   .modal-service-form-detail {
-    padding: 50px 0;
+    padding: 30px 0;
+    margin-left: 15px;
   }
   .modal-service-form-detail > p:nth-child(1) {
     word-break: keep-all;
     font-size: 28px;
   }
   .modal-service-form-detail > p:nth-child(2) {
-    padding: 20px;
+    padding: 30px 15px;
     font-size: 20px;
     word-break: keep-all;
   }
   .modal-service-form-detail > p:nth-child(2) span {
-    font-size: 36px;
+    font-size: 40px;
   }
   .modal-service-form-detail img {
-    bottom: -30px;
-    right: -30px;
+    width: 80px;
+    bottom: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

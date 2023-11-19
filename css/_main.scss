@@ -451,7 +451,7 @@
         padding: 50px;
         border: 1px solid #888;
         border-radius: 30px;
-        width: 80%; 
+        width: calc($destop-width * 0.8); 
     }
 }
 

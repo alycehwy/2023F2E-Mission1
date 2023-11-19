@@ -16,7 +16,7 @@ function carousel() {
     policyTabs[currentPolicyIndex].classList.add('active');
     policyBoxes[currentPolicyIndex].classList.remove('hide');
     currentPolicyIndex++;
-    setTimeout(carousel, 2000); // Change image every 2 seconds
+    setTimeout(carousel, 5000); // Change image every 2 seconds
 }
 
 function changePolicyBox(){

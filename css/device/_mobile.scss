@@ -169,9 +169,17 @@
     }
 
     .policy-box {
+        > div {
+            height: 900px;
+        }
+
         > h3 {
             word-break: keep-all;
         }
+    }
+
+    .policy-box-detail {
+        padding: 0 16px;
     }
 
     // main - donation section
@@ -272,15 +280,24 @@
     }
 
     // modal box
+    .modal-candidate-info > div, .modal-service-form > div {
+        padding: 20px;
+    }
+
     .modal-candidate-info-detail {
+        padding: 30px;
+        margin-left: 15px;
 
         > div {
             width: 100%;
-            padding: 45px;
-            padding: 40px;
+            padding: 20px 25px;
 
             p {
                 margin-top: 10px;
+            }
+
+            ul {
+                padding-left: 15px;
             }
         }
 
@@ -290,7 +307,7 @@
         }
 
         h1 {
-            font-size: 70px
+            font-size: 50px
         }
 
         img {
@@ -299,7 +316,8 @@
     }
 
     .modal-service-form-detail {
-        padding: 50px 0;
+        padding: 30px 0;
+        margin-left: 15px;
 
         > p:nth-child(1) {
             word-break: keep-all;
@@ -307,18 +325,18 @@
         }
 
         > p:nth-child(2) {
-            padding: 20px;
+            padding: 30px 15px;
             font-size: $font-subtitle;
             word-break: keep-all;
             
             span {
-                font-size: 36px;
+                font-size: 40px;
             }
         }
 
         img {
-            bottom: -30px;
-            right: -30px;
+            width: 80px;
+            bottom: 30px;
         }
     }
 }
