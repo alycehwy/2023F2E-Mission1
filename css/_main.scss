@@ -531,9 +531,10 @@
 }
 
 .toTop {
-    @extend .screen-size;
+    // @extend .screen-size;
     @include flexbox($dir: row, $jc: flex-end, $ai:center);
     height: 60px;
+    margin-right: 3%;
 
     a {
         @include flexbox($dir: row, $jc: center, $ai: center);

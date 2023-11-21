@@ -189,7 +189,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.screen-size, .toTop, footer, main, header {
+.screen-size, footer, main, header {
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -1096,6 +1096,7 @@ footer h4 {
   -moz-column-gap: unset;
        column-gap: unset;
   height: 60px;
+  margin-right: 3%;
 }
 .toTop a {
   display: flex;
