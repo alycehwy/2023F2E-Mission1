@@ -26,6 +26,13 @@ It was created using HTML, SCSS, and JavaScript to assess my learning progress.
 
 - PinpinChen [設計稿 Design](https://www.figma.com/file/3jLMmrhDl3UkjTKbU5YCye/2023-F2E-%E7%AB%8B%E5%A7%94%E7%AB%B6%E9%81%B8%E5%AE%98%E7%B6%B2?node-id=6%3A39&mode=dev)
 
+## Features
+
+- RWD
+- Button animation
+- Automatic carousel
+- Modal box
+
 ## Tech Stack
 
 - SCSS

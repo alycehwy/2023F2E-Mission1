@@ -98,7 +98,7 @@ html {
 }
 
 // hidden
-.policy-box.hide, .nav-mobile.hide, .modal-candidate-info.hide, .modal-service-form.hide{
+.policy-box.hide, .nav-mobile.hide, .modal-candidate-info.hide, .modal-service-form.hide, .toTop.hide {
     display: none;
 }
 
@@ -197,10 +197,16 @@ footer {
     h4 {
         color: $primary-color-3;
     }
-} 
+}
 
 .fixedWindow {
     position: fixed;
     width: 100%;
+}
+
+.fixedToTop {
+    position: sticky;
+    top: 600px;
+    z-index: 5;
 }
 

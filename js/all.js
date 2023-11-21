@@ -7,6 +7,9 @@ const modalCandidateInfo = document.querySelector('.modal-candidate-info');
 const candidateInfoBtn = document.querySelector('.cover-button');
 const modalServiceForm = document.querySelector('.modal-service-form');
 const serviceForm = document.querySelector('.service-form');
+const toTopBtn = document.querySelector('.toTop');
+const banner = document.querySelector('.cover-banner');
+const bottomOfBanner = banner.getBoundingClientRect().bottom;
 let currentPolicyIndex = 0;
 
 function carousel() {
@@ -48,6 +51,17 @@ function toggleFormModal(){
     body.classList.toggle('fixedWindow');
 }
 
+function fixToTop(){
+    if(scrollY >= bottomOfBanner){
+        toTopBtn.classList.remove('hide');
+        toTopBtn.classList.add('fixedToTop');
+    }else{
+        toTopBtn.classList.add('hide');
+        toTopBtn.classList.remove('fixedToTop');
+    }
+}
+
+
 // policy box carousel and change
 carousel();
 policyTabs.forEach(tab => tab.addEventListener('click',changePolicyBox));
@@ -70,3 +84,5 @@ serviceForm.addEventListener('submit',(event) => {
 modalServiceForm.addEventListener('click',(event) => event.target.className === 'modal-service-form' ? toggleFormModal() : '');
 modalServiceForm.querySelector('.close').addEventListener('click',toggleFormModal);
 
+// to top button
+window.addEventListener('scroll',fixToTop);

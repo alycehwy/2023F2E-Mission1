@@ -1,3 +1,7 @@
+// body {
+//     position: relative;
+// }
+
 // header
 .nav {
     @include flexbox(row,space-between,center);
@@ -523,5 +527,24 @@
         position: absolute;
         right: 0;
         bottom: 0;
+    }
+}
+
+.toTop {
+    @extend .screen-size;
+    @include flexbox($dir: row, $jc: flex-end, $ai:center);
+    height: 60px;
+
+    a {
+        @include flexbox($dir: row, $jc: center, $ai: center);
+        border-radius: 50px;
+        border: 5px solid $primary-color-5;
+        width: 50px;
+        height: 50px;
+    }
+
+    .svg {
+        background-color: $primary-color-5;
+        mask-size: 99%;
     }
 }
